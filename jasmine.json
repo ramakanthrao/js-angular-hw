@@ -1,0 +1,11 @@
+{
+  "spec_dir": "task",
+  "spec_files": [
+    "**/*.test.js"
+  ],
+  "helpers": [
+    "src/**/*.js"
+  ],
+  "stopSpecOnExpectationFailure": false,
+  "random": true
+}
