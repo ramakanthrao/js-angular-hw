@@ -4,7 +4,8 @@
   "description": "JavaScript and Angular Homeworks",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine --config=jasmine.json"
+    "test": "node bin/index.js",
+    "publish": "node bin/publish.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   "author": "Ramakanth Rao Kulkarni",
   "license": "MIT",
   "devDependencies": {
-    "jasmine": "^3.5.0"
-	}
+    "jasmine": "^3.5.0",
+    "jasmine-json-test-reporter": "^1.0.0-beta"
+  },
+  "dependencies": {
+    "stomp-client": "^0.9.0"
+  }
 }
