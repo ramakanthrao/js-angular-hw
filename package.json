@@ -1,0 +1,19 @@
+{
+  "name": "js-angular-hw",
+  "version": "1.0.0",
+  "description": "JavaScript and Angular Homeworks",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://githyd.epam.com/Ramakanth_Kulkarni/js-angular-hw.git"
+  },
+  "keywords": [
+    "JvaScript Homework",
+    "Angular Homework"
+  ],
+  "author": "Ramakanth Rao Kulkarni",
+  "license": "MIT"
+}
