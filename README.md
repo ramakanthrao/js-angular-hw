@@ -1,8 +1,10 @@
 # How To:
 
 ## create a branch with your login name excluding @epam.com (firstname_lastname)
-example: Ramakanth_kulkarni
-Checkout the code from: https://githyd.epam.com/Ramakanth_Kulkarni/js-angular-hw.git
+### example: Ramakanth_kulkarni
+
+### Checkout the code from: https://githyd.epam.com/Ramakanth_Kulkarni/js-angular-hw.git
+
 `
 cd js-angular-hw
 git pull 
