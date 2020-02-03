@@ -22,6 +22,7 @@
     "jasmine-json-test-reporter": "^1.0.0-beta"
   },
   "dependencies": {
+    "request": "^2.88.0",
     "stomp-client": "^0.9.0"
   }
 }
