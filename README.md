@@ -14,7 +14,7 @@ git checkout <your_branch>
 npm install
 
 npm test
-``
+```
 
 ## all the home tasks are located in task/HW-<no> folder.
 ## code template is provided. 
