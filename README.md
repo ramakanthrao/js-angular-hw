@@ -16,7 +16,7 @@ npm install
 npm test
 ```
 
-## all the home tasks are located in task/HW-<no> folder.
+## all the home tasks are located in task/HW-XX folder.
 ## code template is provided. 
 
 
