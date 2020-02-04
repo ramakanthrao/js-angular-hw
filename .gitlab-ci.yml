@@ -13,6 +13,7 @@ Execute Build:
   - npm install
   - npm start ${CI_BUILD_REF_NAME}
   - npm test ${CI_BUILD_REF_NAME}
+ when: manual
 
 Notify Success:
  image: bash
