@@ -11,7 +11,7 @@ Execute Build:
  script:
   - pwd
   - npm install
-  - npm test
+  - npm test ${CI_BUILD_REF_NAME}
   - npm run publish ${CI_BUILD_REF_NAME}
 
 Notify Success:
