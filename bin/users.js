@@ -11,5 +11,6 @@ export users = [  "Venkatarao_Gude",
                   "Devendar_Reddy_Gadiam",
                   "Naveen_Baddhipadige",
                   "Sridhar_Yamsani",
-                  "Anjaneyelu_Neerati"
+                  "Anjaneyelu_Neerati",
+                  "Rakesh_Budugu"
                 ];
