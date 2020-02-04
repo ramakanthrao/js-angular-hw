@@ -4,6 +4,7 @@ stages:
 
 before_script:
  - pwd
+when: manual
 
 Execute Build:
  image: atlassianlabs/docker-node-jdk-chrome-firefox:latest
