@@ -3,7 +3,7 @@ stages:
   - notify
 
 before_script:
- - pwd 
+ - pwd
 
 Execute Build:
  image: atlassianlabs/docker-node-jdk-chrome-firefox:latest
@@ -11,19 +11,19 @@ Execute Build:
  script:
   - pwd
   - npm install
+  - npm start ${CI_BUILD_REF_NAME}
   - npm test ${CI_BUILD_REF_NAME}
-  - npm run publish ${CI_BUILD_REF_NAME}
 
 Notify Success:
  image: bash
  stage: notify
- script:  
+ script:
   - echo 'this is to notify success....'
- when: on_success 
- 
+ when: on_success
+
 Notify Failure:
  image: bash
  stage: notify
- script:  
+ script:
   - echo 'this is to notify failure....'
  when: on_failure
