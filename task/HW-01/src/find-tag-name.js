@@ -12,7 +12,8 @@
  *   '<a>' => 'a'
  */
 function findTagName(str) {
-    throw new Error('Not implemented');
+    
+    return str.replace('<',"").replace('>',"");;
 }
 
 module.exports = {

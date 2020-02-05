@@ -23,7 +23,7 @@
  *
  */
 function drawRectangle(width, height) {
-    throw new Error('Not implemented');
+    return fillRect()
 }
 
 
