@@ -12,7 +12,8 @@
  *   ''      => 0
  */
 function getStringLength(value) {
-    throw new Error('Not implemented');
+    //return String(value).length;
+    return value.length;
 }
 
 
