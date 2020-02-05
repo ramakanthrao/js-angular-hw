@@ -21,7 +21,7 @@ npm test
 ```
 npm install -g jasmine
 ```
-### use the below command pattern to execute singlw test suit
+### use the below command pattern to execute single test suit
 ```
 jasmine path/to/test.js
 
