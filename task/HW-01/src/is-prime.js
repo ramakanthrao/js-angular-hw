@@ -27,7 +27,16 @@
  *   17 => true
  */
 function isPrime(n) {
-    throw new Error('Not implemented');
+    if( n <= 1) 
+    {
+        return false;
+    }
+    for (var i=2;i<n-1;i++){
+        if (n % i == 0){
+            return false;
+        }
+    }
+    return true;
 }
 
 
