@@ -12,7 +12,10 @@
  *   '<a>' => 'a'
  */
 function findTagName(str) {
-    throw new Error('Not implemented');
+    if (str.length <1){
+        return;
+    }
+    return str.substring(1,str.length-1);
 }
 
 module.exports = {
