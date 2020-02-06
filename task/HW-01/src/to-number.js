@@ -25,7 +25,15 @@
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-    throw new Error('Not implemented');
+    if (Number.isInteger(value)) {
+        return value;
+    }
+    else if (Number.isInteger(Number.parseInt(value))) {
+        return Number.parseInt(value);
+    }
+    else {
+        return def;
+    }
 }
 
 module.exports = {

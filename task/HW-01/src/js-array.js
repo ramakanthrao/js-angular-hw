@@ -22,7 +22,7 @@
  *    [] => [] 
  */
 function doubleArray(arr) {
-   throw new Error('Not implemented');
+   return [...arr, ...arr];
 }
 
 
