@@ -1,4 +1,48 @@
 {
+    "suite4": {
+        "id": "suite4",
+        "description": "HW-01: String: ",
+        "fullName": "HW-01: String: ",
+        "failedExpectations": [],
+        "deprecationWarnings": [],
+        "duration": 0,
+        "status": "passed",
+        "specs": [
+            {
+                "id": "spec3",
+                "description": "getStringLength should return the length of string",
+                "fullName": "HW-01: String:  getStringLength should return the length of string",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            }
+        ]
+    },
+    "suite9": {
+        "id": "suite9",
+        "description": "HW-01: Number: ",
+        "fullName": "HW-01: Number: ",
+        "failedExpectations": [],
+        "deprecationWarnings": [],
+        "duration": 0,
+        "status": "passed",
+        "specs": [
+            {
+                "id": "spec12",
+                "description": "toNumber should convert any value to number or return the default",
+                "fullName": "HW-01: Number:  toNumber should convert any value to number or return the default",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            }
+        ]
+    },
     "suite3": {
         "id": "suite3",
         "description": "HW-01: String: ",
@@ -61,28 +105,6 @@
             }
         ]
     },
-    "suite1": {
-        "id": "suite1",
-        "description": "HW-01: String: ",
-        "fullName": "HW-01: String: ",
-        "failedExpectations": [],
-        "deprecationWarnings": [],
-        "duration": 0,
-        "status": "passed",
-        "specs": [
-            {
-                "id": "spec0",
-                "description": "concatenateStrings should return concatenation of two strings",
-                "fullName": "HW-01: String:  concatenateStrings should return concatenation of two strings",
-                "failedExpectations": [],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "passed"
-            }
-        ]
-    },
     "suite5": {
         "id": "suite5",
         "description": "HW-01: String: ",
@@ -105,8 +127,8 @@
             }
         ]
     },
-    "suite4": {
-        "id": "suite4",
+    "suite1": {
+        "id": "suite1",
         "description": "HW-01: String: ",
         "fullName": "HW-01: String: ",
         "failedExpectations": [],
@@ -115,15 +137,46 @@
         "status": "passed",
         "specs": [
             {
-                "id": "spec3",
-                "description": "getStringLength should return the length of string",
-                "fullName": "HW-01: String:  getStringLength should return the length of string",
+                "id": "spec0",
+                "description": "concatenateStrings should return concatenation of two strings",
+                "fullName": "HW-01: String:  concatenateStrings should return concatenation of two strings",
                 "failedExpectations": [],
                 "passedExpectations": [],
                 "deprecationWarnings": [],
                 "pendingReason": "",
                 "duration": null,
                 "status": "passed"
+            }
+        ]
+    },
+    "suite8": {
+        "id": "suite8",
+        "description": "HW-01: Boolean: ",
+        "fullName": "HW-01: Boolean: ",
+        "failedExpectations": [],
+        "deprecationWarnings": [],
+        "duration": 0,
+        "status": "passed",
+        "specs": [
+            {
+                "id": "spec11",
+                "description": "toBoolean should convert any value to boolean",
+                "fullName": "HW-01: Boolean:  toBoolean should convert any value to boolean",
+                "failedExpectations": [
+                    {
+                        "matcherName": "",
+                        "message": "AssertionError: true == false",
+                        "stack": "error properties: Object({ generatedMessage: true, code: 'ERR_ASSERTION', actual: true, expected: false, operator: '==' })\n    at <Jasmine>\n    at UserContext.<anonymous> (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\test\\to-boolean.test.js:7:16)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
+                        "passed": false,
+                        "expected": "",
+                        "actual": ""
+                    }
+                ],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "failed"
             }
         ]
     },
@@ -177,14 +230,14 @@
                 "status": "failed"
             },
             {
-                "id": "spec8",
-                "description": "insertItem should insert an item at specified position",
-                "fullName": "HW-01: Arrays:  insertItem should insert an item at specified position",
+                "id": "spec9",
+                "description": "getItemsSum should return the sum of all items of numbers array",
+                "fullName": "HW-01: Arrays:  getItemsSum should return the sum of all items of numbers array",
                 "failedExpectations": [
                     {
                         "matcherName": "",
                         "message": "Error: Not implemented",
-                        "stack": "Error: Not implemented\n    at Object.insertItem (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\src\\js-array.js:60:10)\n    at C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\test\\js-arrays.test.js:65:19\n    at <Jasmine>\n    at UserContext.<anonymous> (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\test\\js-arrays.test.js:64:11)\n    at <Jasmine>",
+                        "stack": "Error: Not implemented\n    at Object.getItemsSum (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\src\\js-array.js:76:10)\n    at C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\test\\js-arrays.test.js:86:32\n    at <Jasmine>\n    at UserContext.<anonymous> (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\test\\js-arrays.test.js:85:11)\n    at <Jasmine>",
                         "passed": false,
                         "expected": "",
                         "actual": ""
@@ -197,14 +250,14 @@
                 "status": "failed"
             },
             {
-                "id": "spec9",
-                "description": "getItemsSum should return the sum of all items of numbers array",
-                "fullName": "HW-01: Arrays:  getItemsSum should return the sum of all items of numbers array",
+                "id": "spec8",
+                "description": "insertItem should insert an item at specified position",
+                "fullName": "HW-01: Arrays:  insertItem should insert an item at specified position",
                 "failedExpectations": [
                     {
                         "matcherName": "",
                         "message": "Error: Not implemented",
-                        "stack": "Error: Not implemented\n    at Object.getItemsSum (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\src\\js-array.js:76:10)\n    at C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\test\\js-arrays.test.js:86:32\n    at <Jasmine>\n    at UserContext.<anonymous> (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\test\\js-arrays.test.js:85:11)\n    at <Jasmine>",
+                        "stack": "Error: Not implemented\n    at Object.insertItem (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\src\\js-array.js:60:10)\n    at C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\test\\js-arrays.test.js:65:19\n    at <Jasmine>\n    at UserContext.<anonymous> (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\test\\js-arrays.test.js:64:11)\n    at <Jasmine>",
                         "passed": false,
                         "expected": "",
                         "actual": ""
@@ -248,68 +301,6 @@
                 "pendingReason": "",
                 "duration": null,
                 "status": "passed"
-            }
-        ]
-    },
-    "suite9": {
-        "id": "suite9",
-        "description": "HW-01: Number: ",
-        "fullName": "HW-01: Number: ",
-        "failedExpectations": [],
-        "deprecationWarnings": [],
-        "duration": 0,
-        "status": "passed",
-        "specs": [
-            {
-                "id": "spec12",
-                "description": "toNumber should convert any value to number or return the default",
-                "fullName": "HW-01: Number:  toNumber should convert any value to number or return the default",
-                "failedExpectations": [
-                    {
-                        "matcherName": "",
-                        "message": "Error: Not implemented",
-                        "stack": "Error: Not implemented\n    at Object.toNumber (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\src\\to-number.js:28:11)\n    at UserContext.<anonymous> (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\test\\to-number.test.js:7:31)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
-                        "passed": false,
-                        "expected": "",
-                        "actual": ""
-                    }
-                ],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "failed"
-            }
-        ]
-    },
-    "suite8": {
-        "id": "suite8",
-        "description": "HW-01: Boolean: ",
-        "fullName": "HW-01: Boolean: ",
-        "failedExpectations": [],
-        "deprecationWarnings": [],
-        "duration": 0,
-        "status": "passed",
-        "specs": [
-            {
-                "id": "spec11",
-                "description": "toBoolean should convert any value to boolean",
-                "fullName": "HW-01: Boolean:  toBoolean should convert any value to boolean",
-                "failedExpectations": [
-                    {
-                        "matcherName": "",
-                        "message": "Error: Not implemented",
-                        "stack": "Error: Not implemented\n    at Object.toBoolean (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\src\\to-boolean.js:16:11)\n    at UserContext.<anonymous> (C:\\dev\\angular\\fullstack_ninja_epam\\js-angular-hw\\task\\HW-01\\test\\to-boolean.test.js:7:33)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
-                        "passed": false,
-                        "expected": "",
-                        "actual": ""
-                    }
-                ],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "failed"
             }
         ]
     }
