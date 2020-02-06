@@ -1,5 +1,5 @@
 'use strict';
-export users = [  "Venkatarao_Gude",
+const users = [  "Venkatarao_Gude",
                   "Akbar_Mohmad",
                   "Vedadri_Kakarla",
                   "Nishant_Ranjan",
@@ -11,5 +11,7 @@ export users = [  "Venkatarao_Gude",
                   "Devendar_Reddy_Gadiam",
                   "Naveen_Baddhipadige",
                   "Sridhar_Yamsani",
-                  "Anjaneyelu_Neerati"
+                  "Anjaneyelu_Neerati",
+                  "Rakesh_Budugu"
                 ];
+module.exports = users;              
