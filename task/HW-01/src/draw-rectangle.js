@@ -23,7 +23,10 @@
  *
  */
 function drawRectangle(width, height) {
-    return 2 * (height + width);
+    let tl = '┌' + '─'.repeat(width - 2) + '┐\n';
+    let ml = '│' + ' '.repeat(width - 2) + '│\n';
+    let dl = '└' + '─'.repeat(width - 2) + '┘\n';
+    return tl + ml.repeat(height - 2) + dl;
 }
 
 
