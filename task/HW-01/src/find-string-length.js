@@ -12,7 +12,10 @@
  *   ''      => 0
  */
 function getStringLength(value) {
-    throw new Error('Not implemented');
+    if(value != undefined && value !== null){
+        return value.length;
+    }
+    return 0;
 }
 
 

@@ -23,9 +23,41 @@
  *   'K♠' => 51
  */
 function getCardId(value) {
-    throw new Error('Not implemented');
+    var tree = 1, diamond = 2, hearts = 3, spades = 4, A = 1, J = 11, Q = 12, K = 13;
+    var row;
+    var symbol, cardValue;
+    if (value.length == 2) {
+        symbol = value.charAt(1);
+        cardValue = value.charAt(0);
+    }
+    else if (value.length == 3) {
+        symbol = value.charAt(2);
+        cardValue = value.charAt(0) + value.charAt(1);
+    }
+    if (symbol != undefined && cardValue != undefined) {
+        if (symbol == '♣')
+            row = 1;
+        else if (symbol == '♦')
+            row = 2;
+        else if (symbol == '♥')
+            row = 3;
+        else if (symbol == '♠')
+            row = 4;
+        var col;
+        if (cardValue == 'A')
+            col = 1;
+        else if (cardValue == 'J')
+            col = 11;
+        else if (cardValue == 'Q')
+            col = 12;
+        else if (cardValue == 'K')
+            col = 13;
+        else {
+            col = parseInt(cardValue);
+        }
+        return (((row -1) * 13) + col -1);
+    }
 }
-
 
 module.exports = {
     getCardId: getCardId
