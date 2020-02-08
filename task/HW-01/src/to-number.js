@@ -25,13 +25,16 @@
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-    if (Number.isInteger(value)) {
+    if (value == null || isNaN(value)) {
+        return def;
+    }
+    else if (Number.isInteger(value)) {
         return value;
-    }
-    else if (Number.isInteger(Number.parseInt(value))) {
+    } else if (Number.isInteger(Number.parseInt(value))) {
         return Number.parseInt(value);
-    }
-    else {
+    } else if (Number.isInteger(+value)) {
+        return +value;
+    } else {
         return def;
     }
 }

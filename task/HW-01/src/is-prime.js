@@ -10,7 +10,7 @@
  ********************************************************************************************/
 
 /**
- * Returns true is the number is prime; otherwise false.
+ * Returns true if the number is prime; otherwise false.
  * See: https://en.wikipedia.org/wiki/Primality_test
  *
  * @param {number} n
@@ -27,7 +27,14 @@
  *   17 => true
  */
 function isPrime(n) {
-    throw new Error('Not implemented');
+    let primeFlag = true;
+    for (let index = 2; index <= Math.sqrt(n); index++) {
+      if (n % index == 0) {
+        primeFlag = false;
+        break;
+      }
+    }
+    return primeFlag;
 }
 
 
