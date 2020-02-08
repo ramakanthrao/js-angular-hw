@@ -27,7 +27,15 @@
  *   17 => true
  */
 function isPrime(n) {
-    throw new Error('Not implemented');
+    if (n===0) return false;
+    else if(n===1) return true;
+    else if (n===2) return true;
+    else {
+        for (var i=2; i<=Math.ceil(n/2); i++){
+            if(n%i === 0) return false;                       
+        }
+        return true;
+    }
 }
 
 
