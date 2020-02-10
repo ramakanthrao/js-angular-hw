@@ -122,7 +122,10 @@ function memoize(func) {
  *   partialUsingArguments(fn, 'a','b','c','d')() => 'abcd'
  */
 function partialUsingArguments(fn) {
-    throw new Error('Not implemented');
+    return (...secArgs) => {
+        let firstArgs = Array.apply(null, arguments).splice(1);
+        return fn(...firstArgs, ...secArgs);
+    };
 }
 
 
