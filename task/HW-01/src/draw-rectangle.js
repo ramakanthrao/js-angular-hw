@@ -23,7 +23,40 @@
  *
  */
 function drawRectangle(width, height) {
-    return fillRect()
+    var rectangle = "";
+    for (var i=0; i<height; i++){
+        if (i === 0){
+            rectangle = rectangle+'┌';
+        } 
+        else if(i===(height-1)){
+            rectangle = rectangle+'└'; 
+        }
+        else {
+            rectangle = rectangle+'│'; 
+        }       
+        for (var j=1; j<(width-1); j++){
+           if((i===0) || (i===(height-1))) {
+            rectangle = rectangle+"─";
+           }
+           else{
+            rectangle = rectangle+" ";
+           }
+            
+        }
+        if (i === 0){
+            rectangle = rectangle+'┐';
+        } 
+        else if(i===(height-1)){
+            rectangle = rectangle+'┘'; 
+        }
+        else {
+            rectangle = rectangle+'│'; 
+        }            
+        rectangle=rectangle+'\n';
+        
+    }
+    return rectangle;
+
 }
 
 
