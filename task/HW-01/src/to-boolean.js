@@ -12,8 +12,8 @@
  *   toBoolean('') => false
  *   toBoolean(new Number(0)) => false
  */
-function toBoolean(value) {
-    throw new Error('Not implemented');
+function toBoolean(foo) {
+    throw new Error('Not implemented'); 
 }
 
 module.exports = {
