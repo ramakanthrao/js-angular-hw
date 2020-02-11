@@ -23,7 +23,40 @@
  *
  */
 function drawRectangle(width, height) {
-    throw new Error('Not implemented');
+    var shape = "";
+    for (var i=0; i<height; i++){
+        if (i === 0){
+            shape = shape+'┌';
+        } 
+        else if(i===(height-1)){
+            shape = shape+'└'; 
+        }
+        else {
+            shape = shape+'│'; 
+        }       
+        for (var j=1; j<(width-1); j++){
+           if((i===0) || (i===(height-1))) {
+            shape = shape+"─";
+           }
+           else{
+            shape = shape+" ";
+           }
+            
+        }
+        if (i === 0){
+            shape = shape+'┐';
+        } 
+        else if(i===(height-1)){
+            shape = shape+'┘'; 
+        }
+        else {
+            shape = shape+'│'; 
+        }            
+        shape=shape+'\n';
+        
+    }
+    return shape;
+
 }
 
 
