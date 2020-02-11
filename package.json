@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node bin/index.js || node bin/publish.js",
     "test":"node bin/index.js",
-    "publish":"node bin/publish.js"
+    "version":"node bin/publish.js"
   },
   "repository": {
     "type": "git",
