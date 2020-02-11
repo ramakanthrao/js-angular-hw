@@ -73,7 +73,7 @@ function insertItem(arr, item, index) {
  *   [ 1, 10, 100, 1000 ]  => 1111
  */
 function getItemsSum(arr) {
-   arr.reduce((a, b) => a + b, 0);
+  return arr.reduce((a, b) => a + b, 0);
 }
  
 

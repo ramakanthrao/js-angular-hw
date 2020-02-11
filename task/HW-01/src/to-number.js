@@ -25,8 +25,12 @@
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-    var num = Number(value);
-  return Number.isNaN(num) ? def : Number(value);
+  var num = Number(value);
+  if(value == null || value == undefined || Number.isNaN(num)){
+    return def;
+  }
+    
+  return num;
 }
 
 module.exports = {
