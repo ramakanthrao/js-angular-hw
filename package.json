@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node bin/index.js || node bin/publish.js",
     "test":"node bin/index.js",
-    "poststart":"node bin/publish.js"
+    "restart":"node bin/publish.js"
   },
   "repository": {
     "type": "git",
