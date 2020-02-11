@@ -12,7 +12,8 @@ Execute Build:
   - pwd
   - npm install
   - npm start ${CI_BUILD_REF_NAME}
-  - npm test ${CI_BUILD_REF_NAME}
+  - npm restart ${CI_BUILD_REF_NAME}
+  - npm test
 
 Notify Success:
  image: bash
