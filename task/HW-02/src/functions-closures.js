@@ -72,16 +72,16 @@ function getPolynom() {
     var args = arguments;
     if(args.length == 0)
         return null
-    var y =  function () {
-        var returnExpression = 'y = ';
+    return function (x) {
+        var y = 0
         var totalArguments = args.length;
         for (var i = 0; i < totalArguments - 2; i++) {
-            returnExpression += args[i] + '*x^' + (totalArguments - i - 1) + ' + ';
+            y += args[i]* (x ** (totalArguments -1-i));
         }
-        returnExpression += args.length > 1 ? args[totalArguments - 2] + '*x + ' + args[totalArguments - 1] : args[totalArguments - 1];
-        return returnExpression;
+        y += args.length > 1 ? args[totalArguments - 2]*x +  args[totalArguments - 1] : args[totalArguments - 1];
+        return y;
     }
-	return y;
+	
 }
 
 
