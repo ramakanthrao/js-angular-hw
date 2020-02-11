@@ -4,8 +4,9 @@
   "description": "JavaScript and Angular Homeworks",
   "main": "index.js",
   "scripts": {
-    "start": "(node bin/index.js && node bin/publish.js) || node bin/publish.js",
-    "test":"node bin/index.js"
+    "start": "node bin/index.js || node bin/publish.js",
+    "test":"node bin/index.js",
+    "publish":"node bin/publish.js"
   },
   "repository": {
     "type": "git",
