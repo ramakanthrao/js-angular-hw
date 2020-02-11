@@ -23,7 +23,10 @@
  *
  */
 function drawRectangle(width, height) {
-    throw new Error('Not implemented');
+    if (width || height) {
+        return '┌' + '─'.repeat(width - 2) + '┐\n' + ('│' + ' '.repeat(width - 2) + '│\n').repeat(height - 2) + '└' + '─'.repeat(width - 2) + '┘\n';
+    }
+    return '';
 }
 
 

@@ -5,7 +5,7 @@
  *
  * @param {string} value1
  * @param {string} value2
- * @return {string}
+ * @return {string} value3
  *
  * @example
  *   'aa', 'bb' => 'aabb'
@@ -13,7 +13,9 @@
  *   '',  'bb'  => 'bb'
  */
 function concatenateStrings(value1, value2) {
-    throw new Error('Not implemented');
+    //throw new Error('Not implemented');
+      var value3= value1+value2;
+   return value3;
 }
 
 module.exports = {
