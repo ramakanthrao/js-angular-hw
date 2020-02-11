@@ -25,8 +25,10 @@
  *   getComposition(Math.sin, Math.asin)(x) => Math.sin(Math.acos(x))
  *
  */
-function getComposition(f,g) {
-    return f(g());
+function getComposition(f, g) {
+    return function (x) {
+        return f(g(x));
+    }
 }
 
 
@@ -47,7 +49,7 @@ function getComposition(f,g) {
  *
  */
 function getPowerFunction(exponent) {
-    return function(num){
+    return function (num) {
         return Math.pow(num, exponent);
     }
 }
@@ -67,13 +69,19 @@ function getPowerFunction(exponent) {
  *   getPolynom()      => null
  */
 function getPolynom() {
-    var returnExpression = 'y = ';
-    var totalArguments  = arguments.length;
-    for(var i=0; i<totalArguments -2; i++){
-        returnExpression += arguments[i]+'*x^'+(totalArguments - i - 1)+' + ';
+    var args = arguments;
+    if(args.length == 0)
+        return null
+    var y =  function () {
+        var returnExpression = 'y = ';
+        var totalArguments = args.length;
+        for (var i = 0; i < totalArguments - 2; i++) {
+            returnExpression += args[i] + '*x^' + (totalArguments - i - 1) + ' + ';
+        }
+        returnExpression += args.length > 1 ? args[totalArguments - 2] + '*x + ' + args[totalArguments - 1] : args[totalArguments - 1];
+        return returnExpression;
     }
-   returnExpression += arguments.length > 1? arguments[totalArguments - 2]+'*x + '+ arguments[totalArguments - 1]:arguments[totalArguments - 1];
-    return returnExpression;
+	return y;
 }
 
 
@@ -92,8 +100,15 @@ function getPolynom() {
  *   memoizer() => the same random number  (next run, returns the previous cached result)
  */
 function memoize(func) {
-    throw new Error('Not implemented');
+    var a;
+    return function () {
+        if (a == undefined) {
+            a = func();
+        }
+        return a;
+    }
 }
+
 
 
 
@@ -111,9 +126,19 @@ function memoize(func) {
  *   partialUsingArguments(fn, 'a','b','c','d')() => 'abcd'
  */
 function partialUsingArguments(fn) {
-    throw new Error('Not implemented');
+    var arg = arguments;
+    var conStr = '';
+    for (var i = 0; i < arg.length; i++) {
+        if (typeof (arg[i]) != 'function')
+            conStr += arg[i];
+    }
+    return function () {
+        for (var i = 0; i < arguments.length; i++) {
+            conStr += arguments[i];
+        }
+        return conStr;
+    }
 }
-
 
 /**
  * Returns the id generator function that returns next integer starting from specified number every time when invoking.
@@ -132,7 +157,9 @@ function partialUsingArguments(fn) {
  *   getId10() => 11
  */
 function getIdGeneratorFunction(startFrom) {
-    throw new Error('Not implemented');
+    return function () {
+        return startFrom++;
+    }
 }
 
 
