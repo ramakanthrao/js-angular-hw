@@ -12,5 +12,6 @@ describe('HW-01: Boolean: ', function() {
 		assert.equal(false, task.toBoolean(undefined));
 		assert.equal(false, task.toBoolean(false));
         assert.equal(true, task.toBoolean(new Number('test')));
+
     });
 });
