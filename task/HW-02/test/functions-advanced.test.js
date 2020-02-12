@@ -2,7 +2,7 @@
 'use strict';
 
 var assert = require('assert');
-var Test = require('./TestUtil');
+var Test = require('../../Utils/TestUtil');
 var zero = require('../src/functions-advanced').zero;
 var one = require('../src/functions-advanced').one;
 var two = require('../src/functions-advanced').two;
