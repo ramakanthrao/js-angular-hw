@@ -1,6 +1,6 @@
 {
-    "suite1": {
-        "id": "suite1",
+    "suite5": {
+        "id": "suite5",
         "description": "HW-01: String: ",
         "fullName": "HW-01: String: ",
         "failedExpectations": [],
@@ -9,86 +9,9 @@
         "status": "passed",
         "specs": [
             {
-                "id": "spec0",
-                "description": "concatenateStrings should return concatenation of two strings",
-                "fullName": "HW-01: String:  concatenateStrings should return concatenation of two strings",
-                "failedExpectations": [],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "passed"
-            }
-        ]
-    },
-    "suite10": {
-        "id": "suite10",
-        "description": "HW-02: functions-n-closures-tasks: ",
-        "fullName": "HW-02: functions-n-closures-tasks: ",
-        "failedExpectations": [],
-        "deprecationWarnings": [],
-        "duration": 0,
-        "status": "passed",
-        "specs": [
-            {
-                "id": "spec14",
-                "description": "getPowerFunction should return the math power function using the specified exponent",
-                "fullName": "HW-02: functions-n-closures-tasks:  getPowerFunction should return the math power function using the specified exponent",
-                "failedExpectations": [],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "passed"
-            },
-            {
-                "id": "spec13",
-                "description": "getComposition should return the composition of two functions",
-                "fullName": "HW-02: functions-n-closures-tasks:  getComposition should return the composition of two functions",
-                "failedExpectations": [],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "passed"
-            },
-            {
-                "id": "spec15",
-                "description": "getPolynom should return the polynom with specified coefficients",
-                "fullName": "HW-02: functions-n-closures-tasks:  getPolynom should return the polynom with specified coefficients",
-                "failedExpectations": [],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "passed"
-            },
-            {
-                "id": "spec16",
-                "description": "memoize method should cache the result of function",
-                "fullName": "HW-02: functions-n-closures-tasks:  memoize method should cache the result of function",
-                "failedExpectations": [],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "passed"
-            },
-            {
-                "id": "spec17",
-                "description": "partialUsingArguments should return the function with partial applied arguments",
-                "fullName": "HW-02: functions-n-closures-tasks:  partialUsingArguments should return the function with partial applied arguments",
-                "failedExpectations": [],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "passed"
-            },
-            {
-                "id": "spec18",
-                "description": "getIdGeneratorFunction should return the id generator function",
-                "fullName": "HW-02: functions-n-closures-tasks:  getIdGeneratorFunction should return the id generator function",
+                "id": "spec4",
+                "description": "findTagName should remove first and last angle brackets from tag string",
+                "fullName": "HW-01: String:  findTagName should remove first and last angle brackets from tag string",
                 "failedExpectations": [],
                 "passedExpectations": [],
                 "deprecationWarnings": [],
@@ -120,59 +43,6 @@
             }
         ]
     },
-    "suite5": {
-        "id": "suite5",
-        "description": "HW-01: String: ",
-        "fullName": "HW-01: String: ",
-        "failedExpectations": [],
-        "deprecationWarnings": [],
-        "duration": 0,
-        "status": "passed",
-        "specs": [
-            {
-                "id": "spec4",
-                "description": "findTagName should remove first and last angle brackets from tag string",
-                "fullName": "HW-01: String:  findTagName should remove first and last angle brackets from tag string",
-                "failedExpectations": [],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "passed"
-            }
-        ]
-    },
-    "suite2": {
-        "id": "suite2",
-        "description": "HW-01: String: ",
-        "fullName": "HW-01: String: ",
-        "failedExpectations": [],
-        "deprecationWarnings": [],
-        "duration": 0,
-        "status": "passed",
-        "specs": [
-            {
-                "id": "spec1",
-                "description": "drawRectangle should return the string reprentation of rectangle with specified size",
-                "fullName": "HW-01: String:  drawRectangle should return the string reprentation of rectangle with specified size",
-                "failedExpectations": [
-                    {
-                        "matcherName": "",
-                        "message": "ReferenceError: i is not defined",
-                        "stack": "    at <Jasmine>\n    at Object.drawRectangle (D:\\JS+Angular Training\\Tasks\\js-angular-hw\\task\\HW-01\\src\\draw-rectangle.js:26:10)\n    at UserContext.<anonymous> (D:\\JS+Angular Training\\Tasks\\js-angular-hw\\task\\HW-01\\test\\draw-rectangle.test.js:11:9)\n    at <Jasmine>\n    at runCallback (timers.js:705:18)\n    at tryOnImmediate (timers.js:676:5)",
-                        "passed": false,
-                        "expected": "",
-                        "actual": ""
-                    }
-                ],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "failed"
-            }
-        ]
-    },
     "suite3": {
         "id": "suite3",
         "description": "HW-01: String: ",
@@ -186,28 +56,6 @@
                 "id": "spec2",
                 "description": "getCardId should return the index of card in the initial deck",
                 "fullName": "HW-01: String:  getCardId should return the index of card in the initial deck",
-                "failedExpectations": [],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "passed"
-            }
-        ]
-    },
-    "suite8": {
-        "id": "suite8",
-        "description": "HW-01: Boolean: ",
-        "fullName": "HW-01: Boolean: ",
-        "failedExpectations": [],
-        "deprecationWarnings": [],
-        "duration": 0,
-        "status": "passed",
-        "specs": [
-            {
-                "id": "spec11",
-                "description": "toBoolean should convert any value to boolean",
-                "fullName": "HW-01: Boolean:  toBoolean should convert any value to boolean",
                 "failedExpectations": [],
                 "passedExpectations": [],
                 "deprecationWarnings": [],
@@ -261,6 +109,81 @@
             }
         ]
     },
+    "suite2": {
+        "id": "suite2",
+        "description": "HW-01: String: ",
+        "fullName": "HW-01: String: ",
+        "failedExpectations": [],
+        "deprecationWarnings": [],
+        "duration": 0,
+        "status": "passed",
+        "specs": [
+            {
+                "id": "spec1",
+                "description": "drawRectangle should return the string reprentation of rectangle with specified size",
+                "fullName": "HW-01: String:  drawRectangle should return the string reprentation of rectangle with specified size",
+                "failedExpectations": [
+                    {
+                        "matcherName": "",
+                        "message": "AssertionError [ERR_ASSERTION]: '┌────┐\\n│    │\\n│    │\\n└────┘\\n' == '┌────┐\\n│    │\\n│    │\\n└────┘'",
+                        "stack": "error properties: Object({ generatedMessage: true, code: 'ERR_ASSERTION', actual: '┌────┐\n│    │\n│    │\n└────┘\n', expected: '┌────┐\n│    │\n│    │\n└────┘', operator: '==' })\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\JS+Angular Training\\Tasks\\js-angular-hw\\task\\HW-01\\test\\draw-rectangle.test.js:6:10)\n    at <Jasmine>\n    at runCallback (timers.js:705:18)\n    at tryOnImmediate (timers.js:676:5)\n    at processImmediate (timers.js:658:5)",
+                        "passed": false,
+                        "expected": "",
+                        "actual": ""
+                    }
+                ],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "failed"
+            }
+        ]
+    },
+    "suite1": {
+        "id": "suite1",
+        "description": "HW-01: String: ",
+        "fullName": "HW-01: String: ",
+        "failedExpectations": [],
+        "deprecationWarnings": [],
+        "duration": 0,
+        "status": "passed",
+        "specs": [
+            {
+                "id": "spec0",
+                "description": "concatenateStrings should return concatenation of two strings",
+                "fullName": "HW-01: String:  concatenateStrings should return concatenation of two strings",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            }
+        ]
+    },
+    "suite8": {
+        "id": "suite8",
+        "description": "HW-01: Boolean: ",
+        "fullName": "HW-01: Boolean: ",
+        "failedExpectations": [],
+        "deprecationWarnings": [],
+        "duration": 0,
+        "status": "passed",
+        "specs": [
+            {
+                "id": "spec11",
+                "description": "toBoolean should convert any value to boolean",
+                "fullName": "HW-01: Boolean:  toBoolean should convert any value to boolean",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            }
+        ]
+    },
     "suite7": {
         "id": "suite7",
         "description": "HW-01: Arrays: ",
@@ -271,9 +194,9 @@
         "status": "passed",
         "specs": [
             {
-                "id": "spec7",
-                "description": "removeFalsyValues should return the specified array without falsy values",
-                "fullName": "HW-01: Arrays:  removeFalsyValues should return the specified array without falsy values",
+                "id": "spec10",
+                "description": "Functions from js-array.js should not use basic loops statements",
+                "fullName": "HW-01: Arrays:  Functions from js-array.js should not use basic loops statements",
                 "failedExpectations": [],
                 "passedExpectations": [],
                 "deprecationWarnings": [],
@@ -293,17 +216,6 @@
                 "status": "passed"
             },
             {
-                "id": "spec6",
-                "description": "doubleArray should return the specified array twice",
-                "fullName": "HW-01: Arrays:  doubleArray should return the specified array twice",
-                "failedExpectations": [],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "passed"
-            },
-            {
                 "id": "spec8",
                 "description": "insertItem should insert an item at specified position",
                 "fullName": "HW-01: Arrays:  insertItem should insert an item at specified position",
@@ -315,9 +227,97 @@
                 "status": "passed"
             },
             {
-                "id": "spec10",
-                "description": "Functions from js-array.js should not use basic loops statements",
-                "fullName": "HW-01: Arrays:  Functions from js-array.js should not use basic loops statements",
+                "id": "spec7",
+                "description": "removeFalsyValues should return the specified array without falsy values",
+                "fullName": "HW-01: Arrays:  removeFalsyValues should return the specified array without falsy values",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec6",
+                "description": "doubleArray should return the specified array twice",
+                "fullName": "HW-01: Arrays:  doubleArray should return the specified array twice",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            }
+        ]
+    },
+    "suite10": {
+        "id": "suite10",
+        "description": "HW-02: functions-n-closures-tasks: ",
+        "fullName": "HW-02: functions-n-closures-tasks: ",
+        "failedExpectations": [],
+        "deprecationWarnings": [],
+        "duration": 0,
+        "status": "passed",
+        "specs": [
+            {
+                "id": "spec16",
+                "description": "memoize method should cache the result of function",
+                "fullName": "HW-02: functions-n-closures-tasks:  memoize method should cache the result of function",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec15",
+                "description": "getPolynom should return the polynom with specified coefficients",
+                "fullName": "HW-02: functions-n-closures-tasks:  getPolynom should return the polynom with specified coefficients",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec14",
+                "description": "getPowerFunction should return the math power function using the specified exponent",
+                "fullName": "HW-02: functions-n-closures-tasks:  getPowerFunction should return the math power function using the specified exponent",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec13",
+                "description": "getComposition should return the composition of two functions",
+                "fullName": "HW-02: functions-n-closures-tasks:  getComposition should return the composition of two functions",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec18",
+                "description": "getIdGeneratorFunction should return the id generator function",
+                "fullName": "HW-02: functions-n-closures-tasks:  getIdGeneratorFunction should return the id generator function",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec17",
+                "description": "partialUsingArguments should return the function with partial applied arguments",
+                "fullName": "HW-02: functions-n-closures-tasks:  partialUsingArguments should return the function with partial applied arguments",
                 "failedExpectations": [],
                 "passedExpectations": [],
                 "deprecationWarnings": [],

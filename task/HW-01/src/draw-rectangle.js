@@ -23,32 +23,33 @@
  *
  */
 function drawRectangle(width, height) {
-    for(i=0; i<height; i++){
-        if(i==0){
-            document.write("\u250C");
-        }
-        else if(i==height-1){
-            document.write("\u2514");
-        }
-        else{
-            document.write("\u2502");
-        }
-        for(j=0; j< width-1; j++){
-            if(j==width-2 && i==0){
-                document.write("\u2510"+"\n");
-            }
-            else if(j=width-2 && i == height-1){
-                document.write("\u2518" + "\n");
-            }
-            else{
-                document.write(" ");
-            }
-        }
-    }
+
+	var returnString = '';
+	for (var i = 1; i <= height; i++) {
+		for (var j = 1; j <= width; j++) {
+			if (i == 1 && j == 1)
+				returnString += '\u250c';
+			else if (i == 1 && j == width)
+				returnString += '\u2510' + '\n';
+			else if (i == height && j == 1)
+				returnString += '\u2514';
+			else if (i == height && j == width)
+				returnString += '\u2518';
+			else if ((i == 1 || i == height) && (j > 1 && j < width))
+				returnString += '\u2500';
+			else if ((j == 1) && (i > 1 && i < height))
+				returnString += '\u2502';
+			else if ((j == width) && (i > 1 && i < height))
+				returnString += '\u2502' + '\n';
+			else if ((j > 1 && j < width) && (i > 1 && i < height))
+				returnString += ' ';
+		}
+	}
+	return returnString;
 }
 
 
 
 module.exports = {
-    drawRectangle: drawRectangle
+	drawRectangle: drawRectangle
 };
