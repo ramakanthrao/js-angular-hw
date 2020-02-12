@@ -45,7 +45,7 @@ function drawRectangle(width, height) {
 				returnString += ' ';
 		}
 	}
-	return returnString;
+	return returnString+'\n';
 }
 
 
