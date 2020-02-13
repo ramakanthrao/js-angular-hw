@@ -2,7 +2,7 @@
 var assert = require('assert');
 var task = require('../src/draw-rectangle');
 describe('HW-01: String: ', function() {
-	it('drawRectangle should return the string reprentation of rectangle with specified size', function() {
+	it('drawRectangle should return the string representation of rectangle with specified size', function() {
 		assert.equal(
 		   '┌────┐\n'+
 		   '│    │\n'+

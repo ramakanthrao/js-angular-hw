@@ -23,10 +23,12 @@
  *
  */
 function drawRectangle(width, height) {
-    throw new Error('Not implemented');
+    const line_separator = '\n';
+    let firstLine = '\u250C' + '\u2500'.repeat(width - 2) + '\u2510' +line_separator;
+    let lastLine = '\u2514' + '\u2500'.repeat(width - 2) + '\u2518' + line_separator;
+    let otherLines = '\u2502' + ' '.repeat(width - 2) + '\u2502' + line_separator;
+    return firstLine + otherLines.repeat(height - 2) + lastLine;
 }
-
-
 
 module.exports = {
     drawRectangle: drawRectangle
