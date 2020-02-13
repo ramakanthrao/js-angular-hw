@@ -60,7 +60,6 @@ function drawRectangle(width, height) {
 }
 
 
-
 module.exports = {
     drawRectangle: drawRectangle
 };
