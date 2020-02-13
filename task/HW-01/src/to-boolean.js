@@ -13,7 +13,7 @@
  *   toBoolean(new Number(0)) => false
  */
 function toBoolean(value) {
-   return Boolean(value);
+    return Boolean(value);
 }
 
 module.exports = {
