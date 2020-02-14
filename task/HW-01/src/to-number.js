@@ -25,9 +25,19 @@
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
+    if (value === null) {
+        return def
+    }
+    else {
+        if (isNaN(value * 1)) {
+            return def
+        }
+        else {
+            return value * 1
+        }
+    }
     throw new Error('Not implemented');
 }
-
 module.exports = {
     toNumber: toNumber
 };

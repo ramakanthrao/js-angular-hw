@@ -13,8 +13,8 @@
  * 
  * @param {string} value
  * @return {number}
- *
- * @example
+ * 
+ *   @example
  *   'A♣' => 0
  *   '2♣' => 1 
  *   '3♣' => 2
@@ -23,10 +23,29 @@
  *   'K♠' => 51
  */
 function getCardId(value) {
+    let symbol = {
+        '♣': 0,
+        '♦': 1,
+        '♥': 2,
+        '♠': 3,
+        'A': 1,
+        'J': 11,
+        'Q': 12,
+        'K': 13
+    }
+    if (value.length === 2) {
+        if (!isNaN(value.charAt(0))) {
+            return (value.charAt(0) - 1) + (13 * symbol[value.charAt(1)])
+        }
+        else {
+            return (symbol[value.charAt(0)] - 1 + (13 * symbol[value.charAt(1)]))
+        }
+    }
+    else {
+        return (9 + (13 * symbol[value.charAt(2)]))
+    }
     throw new Error('Not implemented');
 }
-
-
 module.exports = {
     getCardId: getCardId
 };

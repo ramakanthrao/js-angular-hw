@@ -23,11 +23,15 @@
  *
  */
 function drawRectangle(width, height) {
+    let top = '\u250c' + ('\u2500').repeat(width - 2) + '\u2510\n'
+    let bottom = '\u2514' + ('\u2500').repeat(width - 2) + '\u2518\n'
+    let middle = ""
+    for (let i = 1; i <= height - 2; i++) {
+        middle += '\u2502' + (' ').repeat(width - 2) + '\u2502\n'
+    }
+    return top + middle + bottom
     throw new Error('Not implemented');
 }
-
-
-
 module.exports = {
     drawRectangle: drawRectangle
 };

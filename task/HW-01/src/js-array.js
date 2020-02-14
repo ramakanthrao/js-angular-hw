@@ -22,10 +22,12 @@
  *    [] => [] 
  */
 function doubleArray(arr) {
+   arr.map((value) => {
+      arr.push(value)
+   })
+   return arr
    throw new Error('Not implemented');
 }
-
-
 
 /**
  * Removes falsy values from the specified array
@@ -41,6 +43,13 @@ function doubleArray(arr) {
  *    [ false, 0, NaN, '', undefined ]   => [ ]
  */
 function removeFalsyValues(arr) {
+   let result = []
+   arr.filter(value => {
+      if (value) {
+         result.push(value)
+      }
+   })
+   return result
    throw new Error('Not implemented');
 }
 
@@ -57,6 +66,8 @@ function removeFalsyValues(arr) {
  *    [ 1, 'b', 'c'], 0, 'x'  => [ 'x', 1, 'b', 'c' ]
  */
 function insertItem(arr, item, index) {
+   arr.splice(index, 0, item)
+   return arr
    throw new Error('Not implemented');
 }
 
@@ -73,13 +84,15 @@ function insertItem(arr, item, index) {
  *   [ 1, 10, 100, 1000 ]  => 1111
  */
 function getItemsSum(arr) {
+   let result = arr.reduce((sum, value) => {
+      return sum + value
+   }, 0)
+   return result
    throw new Error('Not implemented');
 }
- 
-
 module.exports = {
-    doubleArray: doubleArray,
-    removeFalsyValues: removeFalsyValues,
-    insertItem: insertItem,
-    getItemsSum: getItemsSum,
+   doubleArray: doubleArray,
+   removeFalsyValues: removeFalsyValues,
+   insertItem: insertItem,
+   getItemsSum: getItemsSum,
 };

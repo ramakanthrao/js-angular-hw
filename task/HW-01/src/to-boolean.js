@@ -13,6 +13,12 @@
  *   toBoolean(new Number(0)) => false
  */
 function toBoolean(value) {
+    if (value) {
+        return true
+    }
+    else {
+        return false
+    }
     throw new Error('Not implemented');
 }
 

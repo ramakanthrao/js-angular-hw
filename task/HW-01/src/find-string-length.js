@@ -12,10 +12,9 @@
  *   ''      => 0
  */
 function getStringLength(value) {
+    return value.length
     throw new Error('Not implemented');
 }
-
-
 module.exports = {
     getStringLength: getStringLength
 };
