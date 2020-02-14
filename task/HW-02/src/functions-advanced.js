@@ -21,42 +21,122 @@
  *		Divison should be integer division. 
  *			For example, eight(dividedBy(three())); should return 2, not 2.666666...
  */
-function zero(){throw new Error('Not implemented');}
-function one (){throw new Error('Not implemented');} 	
-function two (){throw new Error('Not implemented');} 	
-function three (){throw new Error('Not implemented');} 
-function four (){throw new Error('Not implemented');} 	
-function five (){throw new Error('Not implemented');} 	
-function six (){throw new Error('Not implemented');} 	
-function seven (){throw new Error('Not implemented');} 
-function eight (){throw new Error('Not implemented');} 
-function nine (){throw new Error('Not implemented');}
+function zero() { 
+    var value = 0;
+    if (arguments.length > 0) {
+        return arguments[0](value);
+    } else
+        return value;
+
+ }
+function one() {
+    var value = 1;
+    if (arguments.length > 0) {
+        return arguments[0](value);
+    } else
+        return value;
+}
+function two() {
+    var value = 2;
+    if (arguments.length > 0) {
+        return arguments[0](value);
+    } else
+        return value;
+}
+function three() {
+    var value = 3;
+    if (arguments.length > 0) {
+        return arguments[0](value);
+    } else
+        return value;
+}
+function four() {
+    var value = 4;
+    if (arguments.length > 0) {
+        return arguments[0](value);
+    } else
+        return value;
+}
+function five() {
+    var value = 5;
+    if (arguments.length > 0) {
+        return arguments[0](value);
+    } else
+        return value;
+}
+function six() {
+    var value = 6;
+    if (arguments.length > 0) {
+        return arguments[0](value);
+    } else
+        return value;
+}
+function seven() { 
+    var value = 7;
+    if (arguments.length > 0) {
+        return arguments[0](value);
+    } else
+        return value;
+}
+function eight() { 
+    var value = 8;
+    if (arguments.length > 0) {
+        return arguments[0](value);
+    } else
+        return value;
+}
+function nine() {
+    var value = 9;
+    if (arguments.length > 0) {
+        return arguments[0](value);
+    } else
+        return value;
+}
 
 
-function dividedBy (){throw new Error('Not implemented');}
-function minus (){throw new Error('Not implemented');}
-function plus (){throw new Error('Not implemented');}
-function times (){throw new Error('Not implemented');}
-function add (){throw new Error('Not implemented');}
+function dividedBy(value1) {
+    return function(value){
+        return Math.round(value / value1);
+    }
+}
+function minus(value1) {
+    return function(value){
+        return value - value1;
+    }
+}
+function plus(value1) {
+    return function(value){
+        return value + value1;
+    }
+}
+function times(value1) {
+    return function(value){
+        return value * value1;
+    }
+ }
+function add(a) {
+    return function(b){
+        return a + b;
+    }
+}
 
 
 
 
-
-module.exports ={
-zero:zero,	
-one :one, 	
-two :two, 
-three:three,
-four:four,
-five:five,
-six :six,
-seven:seven,
-eight:eight,
-nine:nine,
-dividedBy:dividedBy,
-minus:minus,
-plus:plus,
-times:times,
-add:add
+module.exports = {
+    zero: zero,
+    one: one,
+    two: two,
+    three: three,
+    four: four,
+    five: five,
+    six: six,
+    seven: seven,
+    eight: eight,
+    nine: nine,
+    dividedBy: dividedBy,
+    minus: minus,
+    plus: plus,
+    times: times,
+    add: add
 };
