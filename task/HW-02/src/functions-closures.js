@@ -65,7 +65,12 @@ function getPowerFunction(exponent) {
  *   getPolynom()      => null
  */
 function getPolynom() {
-    
+    switch(arguments.length){
+        case 0: return NaN;
+        case 1: return arguments[0];
+        case 2: return x=> {return x*arguments[0]+arguments[1]};
+        case 3: return x=> {return Math.pow(x,2) * arguments[0] + x*arguments[1]+arguments[2]};
+    }
 }
 
 
