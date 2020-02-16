@@ -65,7 +65,20 @@ function getPowerFunction(exponent) {
  *   getPolynom()      => null
  */
 function getPolynom() {
-    throw new Error('Not implemented');
+    var args = arguments;
+    var length = args.length;
+    if (length == 0) {
+        return null;
+    }
+    return function (x) {
+        var y = 0;
+        for (var i = 0; i < length; i++) {
+            y += args[i] * (x ** (length - 1 - i));
+        }
+        return y;
+
+    }
+
 }
 
 
@@ -84,7 +97,11 @@ function getPolynom() {
  *   memoizer() => the same random number  (next run, returns the previous cached result)
  */
 function memoize(func) {
-    throw new Error('Not implemented');
+    var fun = func();
+    return function () {
+        return fun;
+    }
+
 }
 
 
@@ -103,7 +120,11 @@ function memoize(func) {
  *   partialUsingArguments(fn, 'a','b','c','d')() => 'abcd'
  */
 function partialUsingArguments(fn) {
-    throw new Error('Not implemented');
+    var args = Array.from(arguments).slice(1);;
+    return function (){
+        return fn(...args, ...arguments);     
+    }
+
 }
 
 
@@ -124,7 +145,7 @@ function partialUsingArguments(fn) {
  *   getId10() => 11
  */
 function getIdGeneratorFunction(startFrom) {
-    throw new Error('Not implemented');
+    return () => startFrom++;
 }
 
 
