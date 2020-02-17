@@ -21,23 +21,91 @@
  *		Divison should be integer division. 
  *			For example, eight(dividedBy(three())); should return 2, not 2.666666...
  */
-function zero(){throw new Error('Not implemented');}
-function one (){throw new Error('Not implemented');} 	
-function two (){throw new Error('Not implemented');} 	
-function three (){throw new Error('Not implemented');} 
-function four (){throw new Error('Not implemented');} 	
-function five (){throw new Error('Not implemented');} 	
-function six (){throw new Error('Not implemented');} 	
-function seven (){throw new Error('Not implemented');} 
-function eight (){throw new Error('Not implemented');} 
-function nine (){throw new Error('Not implemented');}
 
+ const MULTIPLICATION_OPERATION = "multiplication";
+ const ADDITION_OPERATION = "addition";
+ const SUBTRACTION_OPERATION = "subtraction";
+ const DIVIDE_OPERATION = "divide";
 
-function dividedBy (){throw new Error('Not implemented');}
-function minus (){throw new Error('Not implemented');}
-function plus (){throw new Error('Not implemented');}
-function times (){throw new Error('Not implemented');}
-function add (){throw new Error('Not implemented');}
+function zero(operation){
+    return executeOperation(0, operation);
+}
+
+function executeOperation(operand, operation){
+    
+    if(operation === undefined){
+        return operand;
+    }
+    if(operation.operation === DIVIDE_OPERATION){
+       return  Number.parseInt(operand/operation.operand);
+    } else if(operation.operation === MULTIPLICATION_OPERATION){
+        return  operand*(operation.operand);
+    } else if(operation.operation === SUBTRACTION_OPERATION){
+        return  operand-(operation.operand);
+    } else if(operation.operation === ADDITION_OPERATION){
+        return  operand+(operation.operand);
+    }
+}
+
+function one (operation){
+    return executeOperation(1, operation);
+} 	
+function two (operation){
+    return executeOperation(2, operation);
+} 	
+function three (operation){
+    return executeOperation(3, operation);
+} 
+function four (operation){
+    return executeOperation(4, operation);
+} 	
+function five (operation){
+    return executeOperation(5, operation);
+    
+} 	
+function six (operation){
+    return executeOperation(6, operation);
+} 	
+function seven (operation){
+    return executeOperation(7, operation);
+}
+function eight (operation){
+    return executeOperation(8, operation);
+} 
+function nine (operation){
+    return executeOperation(9, operation);
+}
+
+function dividedBy (operand){
+    return {
+        operation: DIVIDE_OPERATION,
+        operand: operand
+    };
+}
+function minus (operand){
+    return {
+        operation: SUBTRACTION_OPERATION,
+        operand: operand
+    };
+}
+function plus (operand){ 
+    return {
+    operation: ADDITION_OPERATION,
+    operand: operand
+     };
+}
+function times (operand){
+    return {
+        operation: MULTIPLICATION_OPERATION,
+        operand: operand
+    };
+}
+function add (operand){
+    return {
+        operation: ADDITION_OPERATION,
+        operand: operand
+    };
+}
 
 
 

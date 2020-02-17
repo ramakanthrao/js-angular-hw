@@ -12,7 +12,7 @@
  *            '┌────┐\n'+
  *  (6,4) =>  '│    │\n'+
  *            '│    │\n'+
- *            '└────┘\n'
+ *            '└────┘\n'  [_|]
  *
  *  (2,2) =>  '┌┐\n'+
  *            '└┘\n'
@@ -23,7 +23,10 @@
  *
  */
 function drawRectangle(width, height) {
-    throw new Error('Not implemented');
+    var underScore = '_';
+    var lineBreak = '\n';
+    var pipe = '|';
+    return 
 }
 
 

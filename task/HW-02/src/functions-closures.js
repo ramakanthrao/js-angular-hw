@@ -26,7 +26,7 @@
  *
  */
 function getComposition(f,g) {
-    throw new Error('Not implemented');
+    
 }
 
 
@@ -47,7 +47,9 @@ function getComposition(f,g) {
  *
  */
 function getPowerFunction(exponent) {
-    throw new Error('Not implemented');
+    return function(x){
+        return Math.pow(x,exponent);
+    }
 }
 
 
@@ -64,8 +66,15 @@ function getPowerFunction(exponent) {
  *   getPolynom(8)     => y = 8
  *   getPolynom()      => null
  */
-function getPolynom() {
-    throw new Error('Not implemented');
+function getPolynom(args) {
+   var outerargs =  Array.prototype.slice.call(arguments).reverse();
+   if(outerargs.length === 0){
+       return null;
+   }
+    return function(x){
+       return  outerargs.reduce((accumulator, currentValue, currentIndex ) => 
+        accumulator+(currentValue*Math.pow(x,currentIndex)))
+    }
 }
 
 
@@ -83,8 +92,17 @@ function getPolynom() {
  *   ...
  *   memoizer() => the same random number  (next run, returns the previous cached result)
  */
-function memoize(func) {
-    throw new Error('Not implemented');
+function memoize(fun) {
+    let cache ;
+    return function () {
+        if (cache != undefined ) {
+            return cache;
+          } else {
+            let result = fun();
+            cache = result;
+            return result;
+          }
+    }
 }
 
 
@@ -102,8 +120,10 @@ function memoize(func) {
  *   partialUsingArguments(fn, 'a','b','c')('d') => 'abcd'
  *   partialUsingArguments(fn, 'a','b','c','d')() => 'abcd'
  */
-function partialUsingArguments(fn) {
-    throw new Error('Not implemented');
+function partialUsingArguments(fn,args) {
+    return function(subargs){
+
+    }
 }
 
 
@@ -114,8 +134,8 @@ function partialUsingArguments(fn) {
  * @return {Function}
  *
  * @example
- *   var getId4 = getIdGenerator(4);
- *   var getId10 = gerIdGenerator(10);
+ *   var getId4 = getIdGeneratorFunction(4);
+ *   var getId10 = gerIdGeneratorFunction(10);
  *   getId4() => 4
  *   getId10() => 10
  *   getId4() => 5
@@ -123,8 +143,16 @@ function partialUsingArguments(fn) {
  *   getId4() => 7
  *   getId10() => 11
  */
-function getIdGeneratorFunction(startFrom) {
-    throw new Error('Not implemented');
+function getIdGeneratorFunction(n) {
+    var counter = {};
+    return function(){
+        if(counter[n] == undefined){
+            counter[n] = n;
+        } else {
+            counter[n] = counter[n]+1;
+        }
+        return counter[n];
+    }
 }
 
 
