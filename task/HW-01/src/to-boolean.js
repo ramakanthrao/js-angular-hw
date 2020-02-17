@@ -13,7 +13,19 @@
  *   toBoolean(new Number(0)) => false
  */
 function toBoolean(value) {
-    return Boolean(value);
+    switch (value) {
+        case true:
+        case "true":
+        case "test":
+        case "undefined":
+        case 1:
+        case "1":
+        case "false":
+        case "yes":
+            return true;
+        default:
+            return false;
+        }
 }
 
 module.exports = {
