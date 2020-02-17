@@ -23,7 +23,7 @@ npm install -g jasmine
 ```
 ### use the below command pattern to execute single test suit
 ```
-jasmine path/to/test.js
+jasmine --random=false path/to/test.js
 
 ```
 ### OR
