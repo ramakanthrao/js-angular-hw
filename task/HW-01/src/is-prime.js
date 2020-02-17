@@ -14,7 +14,7 @@
  * See: https://en.wikipedia.org/wiki/Primality_test
  *
  * @param {number} n
- * @return {bool}
+ * @return {boolean}
  * 
  * @example:
  *   4 => false
@@ -27,7 +27,11 @@
  *   17 => true
  */
 function isPrime(n) {
-    throw new Error('Not implemented');
+    for (let i = 2, s = Math.sqrt(n); i <= s; i++)
+        if (n % i === 0) {
+            return false;
+        }
+    return n > 1;
 }
 
 

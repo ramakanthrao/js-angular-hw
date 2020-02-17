@@ -12,7 +12,14 @@
  *   '<a>' => 'a'
  */
 function findTagName(str) {
-    throw new Error('Not implemented');
+    const TAG_OPEN_BRACES = "<";
+    const TAG_CLOSE_BRACES = ">";
+
+    if (str.charAt(0) === TAG_OPEN_BRACES && str.charAt(str.length - 1) === TAG_CLOSE_BRACES) {
+        return str.substring(1, str.length - 1);
+    } else {
+        throw new Error("Invalid tag name")
+    }
 }
 
 module.exports = {
