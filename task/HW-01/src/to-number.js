@@ -25,7 +25,15 @@
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-    throw new Error('Not implemented');
+    if(value==null) return def;
+   var number=new Number(value);
+   if(number.valueOf()<=0)
+   {
+       return number.valueOf();
+   }else if(!number.valueOf()){
+       return def;
+   }
+   return number.valueOf();
 }
 
 module.exports = {

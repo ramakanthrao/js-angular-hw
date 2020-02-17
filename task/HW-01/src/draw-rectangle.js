@@ -23,7 +23,13 @@
  *
  */
 function drawRectangle(width, height) {
-    throw new Error('Not implemented');
+    let horiSize=width-2;
+    let horiLine='─'.repeat(horiSize);
+    let  spaceLine=' '.repeat(horiSize);
+    let bottom=`└${horiLine}┘\n`;
+    let  top=`┌${horiLine}┐\n`;
+   let middle=`│${spaceLine}│\n`.repeat(height-2);
+    return top+middle+bottom;
 }
 
 
