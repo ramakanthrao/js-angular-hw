@@ -127,8 +127,20 @@ function memoize(func) {
  *   partialUsingArguments(fn, 'a','b','c','d')() => 'abcd'
  */
 function partialUsingArguments(fn) {
-    throw new Error('Not implemented');
+    var arg = arguments; 
+    var constructString = '';
+    for (var i = 0; i < arg.length; i++) {
+        if (typeof (arg[i]) != 'function')
+           constructString += arg[i];
+    }
+    return function () {
+        for (var i = 0; i < arguments.length; i++) {
+            constructString += arguments[i];
+        }
+        return constructString;
+    }
 }
+
 
 
 /**
