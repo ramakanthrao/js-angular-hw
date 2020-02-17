@@ -254,101 +254,45 @@
                 "id": "spec13",
                 "description": "shoud do static example calculations",
                 "fullName": "HW-02: random calculations shoud do static example calculations",
-                "failedExpectations": [
-                    {
-                        "matcherName": "",
-                        "message": "Error: Not implemented",
-                        "stack": "Error: Not implemented\n    at five (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\src\\functions-advanced.js:29:24)\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\test\\functions-advanced.test.js:26:29)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
-                        "passed": false,
-                        "expected": "",
-                        "actual": ""
-                    }
-                ],
+                "failedExpectations": [],
                 "passedExpectations": [],
                 "deprecationWarnings": [],
                 "pendingReason": "",
                 "duration": null,
-                "status": "failed"
+                "status": "passed"
             },
             {
                 "id": "spec14",
                 "description": "should add",
                 "fullName": "HW-02: random calculations should add",
-                "failedExpectations": [
-                    {
-                        "matcherName": "",
-                        "message": "Error: Not implemented",
-                        "stack": "Error: Not implemented\n    at one (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\src\\functions-advanced.js:25:23)\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\test\\functions-advanced.test.js:36:20)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
-                        "passed": false,
-                        "expected": "",
-                        "actual": ""
-                    }
-                ],
+                "failedExpectations": [],
                 "passedExpectations": [],
                 "deprecationWarnings": [],
                 "pendingReason": "",
                 "duration": null,
-                "status": "failed"
+                "status": "passed"
             },
             {
                 "id": "spec15",
                 "description": "should subtract",
                 "fullName": "HW-02: random calculations should subtract",
-                "failedExpectations": [
-                    {
-                        "matcherName": "",
-                        "message": "Error: Not implemented",
-                        "stack": "Error: Not implemented\n    at seven (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\src\\functions-advanced.js:31:25)\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\test\\functions-advanced.test.js:44:20)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
-                        "passed": false,
-                        "expected": "",
-                        "actual": ""
-                    }
-                ],
+                "failedExpectations": [],
                 "passedExpectations": [],
                 "deprecationWarnings": [],
                 "pendingReason": "",
                 "duration": null,
-                "status": "failed"
+                "status": "passed"
             },
             {
                 "id": "spec16",
                 "description": "should multiply",
                 "fullName": "HW-02: random calculations should multiply",
-                "failedExpectations": [
-                    {
-                        "matcherName": "",
-                        "message": "Error: Not implemented",
-                        "stack": "Error: Not implemented\n    at zero (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\src\\functions-advanced.js:24:23)\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\test\\functions-advanced.test.js:52:20)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
-                        "passed": false,
-                        "expected": "",
-                        "actual": ""
-                    }
-                ],
+                "failedExpectations": [],
                 "passedExpectations": [],
                 "deprecationWarnings": [],
                 "pendingReason": "",
                 "duration": null,
-                "status": "failed"
-            },
-            {
-                "id": "spec17",
-                "description": "should divide",
-                "fullName": "HW-02: random calculations should divide",
-                "failedExpectations": [
-                    {
-                        "matcherName": "",
-                        "message": "Error: Not implemented",
-                        "stack": "Error: Not implemented\n    at five (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\src\\functions-advanced.js:29:24)\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\test\\functions-advanced.test.js:60:26)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
-                        "passed": false,
-                        "expected": "",
-                        "actual": ""
-                    }
-                ],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "failed"
+                "status": "passed"
             }
         ]
     },
@@ -356,20 +300,56 @@
         "id": "suite11",
         "description": "HW-02: Chain of function calls",
         "fullName": "HW-02: Chain of function calls",
-        "failedExpectations": [
-            {
-                "matcherName": "",
-                "message": "Error: Not implemented",
-                "stack": "Error: Not implemented\n    at add (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\src\\functions-advanced.js:40:23)\n    at Suite.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\test\\functions-advanced.test.js:66:10)\n    at <Jasmine>\n    at Object.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-02\\test\\functions-advanced.test.js:65:1)\n    at Module._compile (internal/modules/cjs/loader.js:955:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)\n    at Module.load (internal/modules/cjs/loader.js:811:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:723:14)",
-                "passed": false,
-                "expected": "",
-                "actual": ""
-            }
-        ],
+        "failedExpectations": [],
         "deprecationWarnings": [],
         "duration": 0,
-        "status": "failed",
-        "specs": []
+        "status": "passed",
+        "specs": [
+            {
+                "id": "spec17",
+                "description": "should return the number passed in on a single call",
+                "fullName": "HW-02: Chain of function calls should return the number passed in on a single call",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec18",
+                "description": "should be able to store values and reuse them",
+                "fullName": "HW-02: Chain of function calls should be able to store values and reuse them",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec19",
+                "description": "should be able to store curried functions",
+                "fullName": "HW-02: Chain of function calls should be able to store curried functions",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec20",
+                "description": "should be able to execute chain of function calls",
+                "fullName": "HW-02: Chain of function calls should be able to execute chain of function calls",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            }
+        ]
     },
     "suite12": {
         "id": "suite12",
@@ -381,7 +361,7 @@
         "status": "passed",
         "specs": [
             {
-                "id": "spec18",
+                "id": "spec21",
                 "description": "getComposition should return the composition of two functions",
                 "fullName": "HW-02: functions-n-closures-tasks:  getComposition should return the composition of two functions",
                 "failedExpectations": [],
@@ -392,7 +372,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec19",
+                "id": "spec22",
                 "description": "getPowerFunction should return the math power function using the specified exponent",
                 "fullName": "HW-02: functions-n-closures-tasks:  getPowerFunction should return the math power function using the specified exponent",
                 "failedExpectations": [],
@@ -403,7 +383,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec20",
+                "id": "spec23",
                 "description": "getPolynom should return the polynom with specified coefficients",
                 "fullName": "HW-02: functions-n-closures-tasks:  getPolynom should return the polynom with specified coefficients",
                 "failedExpectations": [],
@@ -414,7 +394,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec21",
+                "id": "spec24",
                 "description": "memoize method should cache the result of function",
                 "fullName": "HW-02: functions-n-closures-tasks:  memoize method should cache the result of function",
                 "failedExpectations": [],
@@ -425,7 +405,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec22",
+                "id": "spec25",
                 "description": "partialUsingArguments should return the function with partial applied arguments",
                 "fullName": "HW-02: functions-n-closures-tasks:  partialUsingArguments should return the function with partial applied arguments",
                 "failedExpectations": [],
@@ -436,7 +416,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec23",
+                "id": "spec26",
                 "description": "getIdGeneratorFunction should return the id generator function",
                 "fullName": "HW-02: functions-n-closures-tasks:  getIdGeneratorFunction should return the id generator function",
                 "failedExpectations": [],
@@ -458,7 +438,7 @@
         "status": "passed",
         "specs": [
             {
-                "id": "spec24",
+                "id": "spec27",
                 "description": "should be a function",
                 "fullName": "HW-03: The Cat constructor should be a function",
                 "failedExpectations": [],
@@ -469,14 +449,14 @@
                 "status": "passed"
             },
             {
-                "id": "spec25",
+                "id": "spec28",
                 "description": "should not allow cats to be instantiated without a name and an age",
                 "fullName": "HW-03: The Cat constructor should not allow cats to be instantiated without a name and an age",
                 "failedExpectations": [
                     {
                         "matcherName": "toThrow",
-                        "message": "Expected function to throw 'Must provide a name and a weight!', but it threw Error: Not implemented.",
-                        "stack": "Error: Expected function to throw 'Must provide a name and a weight!', but it threw Error: Not implemented.\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:11:46)\n    at <Jasmine>",
+                        "message": "Expected function to throw 'Must provide a name and a weight!', but it threw Error: Must have name.",
+                        "stack": "Error: Expected function to throw 'Must provide a name and a weight!', but it threw Error: Must have name.\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:11:46)\n    at <Jasmine>",
                         "passed": false,
                         "expected": "Must provide a name and a weight!"
                     }
@@ -488,7 +468,7 @@
                 "status": "failed"
             },
             {
-                "id": "spec26",
+                "id": "spec29",
                 "description": "should have an averageWeight method",
                 "fullName": "HW-03: The Cat constructor should have an averageWeight method",
                 "failedExpectations": [
@@ -508,14 +488,14 @@
                 "status": "failed"
             },
             {
-                "id": "spec27",
+                "id": "spec30",
                 "description": "should compute the correct average weight of cats created so far",
                 "fullName": "HW-03: The Cat constructor should compute the correct average weight of cats created so far",
                 "failedExpectations": [
                     {
                         "matcherName": "",
-                        "message": "Error: Not implemented",
-                        "stack": "Error: Not implemented\n    at new Cat (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\src\\object-with-functions.js:31:8)\n    at D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:22:16\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:25:8)\n    at <Jasmine>\n    at listOnTimeout (internal/timers.js:531:17)",
+                        "message": "TypeError: Cat.averageWeight is not a function",
+                        "stack": "    at <Jasmine>\n    at D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:24:20\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:25:8)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
                         "passed": false,
                         "expected": "",
                         "actual": ""
@@ -533,20 +513,83 @@
         "id": "suite14",
         "description": "HW-03: The cat instances",
         "fullName": "HW-03: The cat instances",
-        "failedExpectations": [
-            {
-                "matcherName": "",
-                "message": "Error: Not implemented",
-                "stack": "Error: Not implemented\n    at new Cat (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\src\\object-with-functions.js:31:8)\n    at Suite.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:31:14)\n    at <Jasmine>\n    at Object.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:29:1)\n    at Module._compile (internal/modules/cjs/loader.js:955:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)\n    at Module.load (internal/modules/cjs/loader.js:811:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:723:14)",
-                "passed": false,
-                "expected": "",
-                "actual": ""
-            }
-        ],
+        "failedExpectations": [],
         "deprecationWarnings": [],
         "duration": 0,
-        "status": "failed",
-        "specs": []
+        "status": "passed",
+        "specs": [
+            {
+                "id": "spec31",
+                "description": "instances should not have an averageWeight method",
+                "fullName": "HW-03: The cat instances instances should not have an averageWeight method",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec32",
+                "description": "instances should have the correct constructor property set",
+                "fullName": "HW-03: The cat instances instances should have the correct constructor property set",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec33",
+                "description": "weight property should be settable in the usual way, e.g. felix.weight=",
+                "fullName": "HW-03: The cat instances weight property should be settable in the usual way, e.g. felix.weight=",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            },
+            {
+                "id": "spec34",
+                "description": "Cat.averageWeight() should still be correct after updating instances",
+                "fullName": "HW-03: The cat instances Cat.averageWeight() should still be correct after updating instances",
+                "failedExpectations": [
+                    {
+                        "matcherName": "",
+                        "message": "TypeError: Cat.averageWeight is not a function",
+                        "stack": "    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:54:23)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
+                        "passed": false,
+                        "expected": "",
+                        "actual": ""
+                    }
+                ],
+                "passedExpectations": [],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "failed"
+            },
+            {
+                "id": "spec35",
+                "description": "Uses Object.defineProperty to get and set instance weight",
+                "fullName": "HW-03: The cat instances Uses Object.defineProperty to get and set instance weight",
+                "failedExpectations": [],
+                "passedExpectations": [
+                    {
+                        "matcherName": "toBeTruthy",
+                        "message": "Passed.",
+                        "stack": "",
+                        "passed": true
+                    }
+                ],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "duration": null,
+                "status": "passed"
+            }
+        ]
     },
     "suite15": {
         "id": "suite15",
@@ -558,7 +601,7 @@
         "status": "passed",
         "specs": [
             {
-                "id": "spec28",
+                "id": "spec36",
                 "description": "should square() correctly",
                 "fullName": "HW-03:  prototype inheritence static tests should square() correctly",
                 "failedExpectations": [],
@@ -569,7 +612,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec29",
+                "id": "spec37",
                 "description": "should cube() correctly",
                 "fullName": "HW-03:  prototype inheritence static tests should cube() correctly",
                 "failedExpectations": [],
@@ -580,7 +623,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec30",
+                "id": "spec38",
                 "description": "should sum() and average() correctly",
                 "fullName": "HW-03:  prototype inheritence static tests should sum() and average() correctly",
                 "failedExpectations": [],
@@ -598,7 +641,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec31",
+                "id": "spec39",
                 "description": "should even() and odd() correctly",
                 "fullName": "HW-03:  prototype inheritence static tests should even() and odd() correctly",
                 "failedExpectations": [],
@@ -620,7 +663,7 @@
         "status": "passed",
         "specs": [
             {
-                "id": "spec32",
+                "id": "spec40",
                 "description": "should even() and odd() correctly",
                 "fullName": "HW-03:  prototype inheritence random tests should even() and odd() correctly",
                 "failedExpectations": [],
@@ -631,7 +674,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec33",
+                "id": "spec41",
                 "description": "should work all together :)",
                 "fullName": "HW-03:  prototype inheritence random tests should work all together :)",
                 "failedExpectations": [],

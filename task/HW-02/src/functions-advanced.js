@@ -21,42 +21,128 @@
  *		Divison should be integer division. 
  *			For example, eight(dividedBy(three())); should return 2, not 2.666666...
  */
-function zero(){throw new Error('Not implemented');}
-function one (){throw new Error('Not implemented');} 	
-function two (){throw new Error('Not implemented');} 	
-function three (){throw new Error('Not implemented');} 
-function four (){throw new Error('Not implemented');} 	
-function five (){throw new Error('Not implemented');} 	
-function six (){throw new Error('Not implemented');} 	
-function seven (){throw new Error('Not implemented');} 
-function eight (){throw new Error('Not implemented');} 
-function nine (){throw new Error('Not implemented');}
+function zero() {
+    var f = arguments[0];
+    if (f instanceof Function) {
+        return f(0);
+    }
+    return 0;
+}
+function one() {
+    var f = arguments[0];
+    if (f instanceof Function) {
+        return f(1);
+    }
+    return 1;
+}
+function two() {
+    var f = arguments[0];
+    if (f instanceof Function) {
+        return f(2);
+    }
+    return 2;
+}
+function three() {
+    var f = arguments[0];
+    if (f instanceof Function) {
+        return f(3);
+    }
+    return 3;
+}
+function four() {
+    var f = arguments[0];
+    if (f instanceof Function) {
+        return f(4);
+    }
+    return 4;
+}
+function five() {
+    var f = arguments[0];
+    if (f instanceof Function) {
+        return f(5);
+    }
+    return 5;
+}
+function six() {
+    var f = arguments[0];
+    if (f instanceof Function) {
+        return f(6);
+    }
+    return 6;
+}
+function seven() {
+    var f = arguments[0];
+    if (f instanceof Function) {
+        return f(7);
+    }
+    return 7;
+}
+function eight() {
+    var f = arguments[0];
+    if (f instanceof Function) {
+        return f(8);
+    }
+    return 8;
+}
+function nine() {
+    var f = arguments[0];
+    if (f instanceof Function) {
+        return f(9);
+    }
+    return 9;
+}
 
 
-function dividedBy (){throw new Error('Not implemented');}
-function minus (){throw new Error('Not implemented');}
-function plus (){throw new Error('Not implemented');}
-function times (){throw new Error('Not implemented');}
-function add (){throw new Error('Not implemented');}
+function dividedBy(operand2) {
+    return function (operand1) {
+        return operand1 / operand2;
+    };
+}
+function minus(operand2) {
+    return function (operand1) {
+        return operand1 - operand2;
+    };
+}
+function plus(operand2) {
+    return function (operand1) {
+        return operand1 + operand2;
+    };
+}
+function times(operand2) {
+    return function (operand1) {
+        return operand1 * operand2;
+    };
+}
+
+
+function add(x) {
+    function resultFn(y) {
+        return add(x + y);
+    }
+    resultFn.valueOf = function () {
+        return x;
+    };
+    return resultFn;
+}
 
 
 
 
 
-module.exports ={
-zero:zero,	
-one :one, 	
-two :two, 
-three:three,
-four:four,
-five:five,
-six :six,
-seven:seven,
-eight:eight,
-nine:nine,
-dividedBy:dividedBy,
-minus:minus,
-plus:plus,
-times:times,
-add:add
+module.exports = {
+    zero: zero,
+    one: one,
+    two: two,
+    three: three,
+    four: four,
+    five: five,
+    six: six,
+    seven: seven,
+    eight: eight,
+    nine: nine,
+    dividedBy: dividedBy,
+    minus: minus,
+    plus: plus,
+    times: times,
+    add: add
 };

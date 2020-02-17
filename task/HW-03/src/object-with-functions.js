@@ -27,8 +27,27 @@
  *
 */
 
-function Cat(){
-	throw new Error('Not implemented');
-};
+var Cat = (function () {
+	var globalWeight = 0;
+	var globalCount = 0;
+
+	var Cat = function (name, weight) {
+		if (!name || !weight) {
+			throw new Error('Must have name');
+		}
+
+		this.name = name;
+		//this.weight = weight;
+		Object.defineProperty(this, 'weight', { set: function(ins){weight=ins;}, get: function(){ return weight; }});
+		globalCount += 1;
+		globalWeight += weight;
+
+	}
+
+	Cat.avgerageWeight = function () {
+		return globalWeight / globalCount;
+	}
+	return Cat;
+}());
 
 module.exports = Cat;
