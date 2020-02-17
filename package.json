@@ -4,9 +4,10 @@
   "description": "JavaScript and Angular Homeworks",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d build",
     "start": "node bin/index.js || node bin/publish.js",
-    "test":"node bin/index.js",
-    "restart":"node bin/publish.js"
+    "test": "node bin/index.js",
+    "restart": "node bin/publish.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   "author": "Ramakanth Rao Kulkarni",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "jasmine": "^3.5.0",
     "jasmine-json-test-reporter": "^1.0.0-beta"
   },
