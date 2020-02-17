@@ -21,22 +21,22 @@
  *		Divison should be integer division. 
  *			For example, eight(dividedBy(three())); should return 2, not 2.666666...
  */
-function zero(){throw new Error('Not implemented');}
-function one (){throw new Error('Not implemented');} 	
-function two (){throw new Error('Not implemented');} 	
-function three (){throw new Error('Not implemented');} 
-function four (){throw new Error('Not implemented');} 	
-function five (){throw new Error('Not implemented');} 	
-function six (){throw new Error('Not implemented');} 	
-function seven (){throw new Error('Not implemented');} 
-function eight (){throw new Error('Not implemented');} 
-function nine (){throw new Error('Not implemented');}
+function zero(func)   { return func ? func(0) : 0; };
+function one(func)    { return func ? func(1) : 1; };
+function two(func)    { return func ? func(2) : 2; };
+function three(func)  { return func ? func(3) : 3; };
+function four(func)   { return func ? func(4) : 4; };
+function five(func)   { return func ? func(5) : 5; };
+function six(func)    { return func ? func(6) : 6; };
+function seven(func)  { return func ? func(7) : 7; };
+function eight(func)  { return func ? func(8) : 8; };
+function nine(func)   { return func ? func(9) : 9; };
 
 
-function dividedBy (){throw new Error('Not implemented');}
-function minus (){throw new Error('Not implemented');}
-function plus (){throw new Error('Not implemented');}
-function times (){throw new Error('Not implemented');}
+function dividedBy( b ) { return function( a ) { return Math.floor(a / b); }; };
+function minus( b )     { return function( a ) { return a - b; }; };
+function plus( b )      { return function( a ) { return a + b; }; };
+function times( b )     { return function( a ) { return a * b; }; };
 function add (){throw new Error('Not implemented');}
 
 
