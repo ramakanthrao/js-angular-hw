@@ -27,8 +27,29 @@
  *
 */
 
-function Cat(){
-	throw new Error('Not implemented');
-};
+var Cat=(function Cat(weight,name){
+	var cats = [];
+  var constructor = function (name, weight) {
+    if (typeof name == "undefined" || typeof weight == "undefined") {
+      throw "Must provide a name and a weight!";
+    }
+    Object.defineProperty(this, 'name', {
+      get: function () { return name }
+    });
+    Object.defineProperty(this, 'weight', {
+      get: function () { return weight },
+      set: function (x) { weight = x; return weight }
+    });
+    cats.push(this);
+  };
+  constructor.averageWeight = function() {
+    return cats.reduce(function (sum, cat) {
+		console.log(sum + cat.name);
+		 return sum + cat.weight 
+		}, 0) / cats.length;
+  };
+  return constructor;
+	
+}());
 
 module.exports = Cat;
