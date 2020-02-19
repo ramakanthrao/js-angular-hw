@@ -452,40 +452,30 @@
                 "id": "spec28",
                 "description": "should not allow cats to be instantiated without a name and an age",
                 "fullName": "HW-03: The Cat constructor should not allow cats to be instantiated without a name and an age",
-                "failedExpectations": [
+                "failedExpectations": [],
+                "passedExpectations": [
                     {
                         "matcherName": "toThrow",
-                        "message": "Expected function to throw 'Must provide a name and a weight!', but it threw Error: Must have name.",
-                        "stack": "Error: Expected function to throw 'Must provide a name and a weight!', but it threw Error: Must have name.\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:11:46)\n    at <Jasmine>",
-                        "passed": false,
-                        "expected": "Must provide a name and a weight!"
+                        "message": "Passed.",
+                        "stack": "",
+                        "passed": true
                     }
                 ],
-                "passedExpectations": [],
                 "deprecationWarnings": [],
                 "pendingReason": "",
                 "duration": null,
-                "status": "failed"
+                "status": "passed"
             },
             {
                 "id": "spec29",
                 "description": "should have an averageWeight method",
                 "fullName": "HW-03: The Cat constructor should have an averageWeight method",
-                "failedExpectations": [
-                    {
-                        "matcherName": "",
-                        "message": "AssertionError: 'undefined' == 'function'",
-                        "stack": "error properties: Object({ generatedMessage: true, code: 'ERR_ASSERTION', actual: 'undefined', expected: 'function', operator: '==' })\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:15:12)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
-                        "passed": false,
-                        "expected": "",
-                        "actual": ""
-                    }
-                ],
+                "failedExpectations": [],
                 "passedExpectations": [],
                 "deprecationWarnings": [],
                 "pendingReason": "",
                 "duration": null,
-                "status": "failed"
+                "status": "passed"
             },
             {
                 "id": "spec30",
@@ -494,8 +484,8 @@
                 "failedExpectations": [
                     {
                         "matcherName": "",
-                        "message": "TypeError: Cat.averageWeight is not a function",
-                        "stack": "    at <Jasmine>\n    at D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:24:20\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:25:8)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
+                        "message": "AssertionError: 21.666666666666668 == 25",
+                        "stack": "error properties: Object({ generatedMessage: true, code: 'ERR_ASSERTION', actual: 21.666666666666668, expected: 25, operator: '==' })\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:20:12)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
                         "passed": false,
                         "expected": "",
                         "actual": ""
@@ -558,8 +548,8 @@
                 "failedExpectations": [
                     {
                         "matcherName": "",
-                        "message": "TypeError: Cat.averageWeight is not a function",
-                        "stack": "    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:54:23)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
+                        "message": "AssertionError: 22 == 23",
+                        "stack": "error properties: Object({ generatedMessage: true, code: 'ERR_ASSERTION', actual: 22, expected: 23, operator: '==' })\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:54:12)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
                         "passed": false,
                         "expected": "",
                         "actual": ""

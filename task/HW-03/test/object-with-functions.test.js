@@ -18,14 +18,14 @@ describe("HW-03: The Cat constructor", function() {
     
   it("should compute the correct average weight of cats created so far", function () {
     assert.equal( 
-      (function () { 
+      (function(){ 
         cleo = new Cat('cleo', 15);
         garfield = new Cat('garfield', 35);
         return Cat.averageWeight();
       }()), 25);
     });
 });
-
+  
 describe("HW-03: The cat instances", function () {
 	
 	var felix = new Cat('felix', 15);

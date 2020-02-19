@@ -33,20 +33,19 @@ var Cat = (function () {
 
 	var Cat = function (name, weight) {
 		if (!name || !weight) {
-			throw new Error('Must have name');
+			throw  "Must provide a name and a weight!";
 		}
-
-		this.name = name;
-		//this.weight = weight;
-		Object.defineProperty(this, 'weight', { set: function(ins){weight=ins;}, get: function(){ return weight; }});
+		//	this.name = name;
+		//	this.weight = weight;
+		Object.defineProperty(this, 'name', { set: function (ins) { name = ins; }, get: function () { return name; } });
+		Object.defineProperty(this, 'weight', { set: function (wgt) { weight = wgt; }, get: function () { return weight; } });
 		globalCount += 1;
 		globalWeight += weight;
-
 	}
 
-	Cat.avgerageWeight = function () {
+	Cat.averageWeight = function () {
 		return globalWeight / globalCount;
-	}
+	};
 	return Cat;
 }());
 

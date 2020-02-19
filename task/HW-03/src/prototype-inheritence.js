@@ -15,5 +15,26 @@
  *	Note: the original array must not be changed in any case!
  *
 */
+Array.prototype.square = function () {
+    return this.map(x => x * x);
+};
 
+Array.prototype.cube = function () {
+    return this.map(x => x*x*x);
+};
+
+Array.prototype.sum = function () {
+    return this.reduce(function(a, b) { return a + b; }, 0);
+};
+Array.prototype.average = function () {
+    return this.sum()/this.length;
+};
+
+Array.prototype.even = function () {
+    return this.filter(function(element) { return element % 2 == 0 ; });
+};
+
+Array.prototype.odd = function () {
+    return this.filter(function(element) { return element % 2 != 0 ; });
+};
 module.exports = {};
