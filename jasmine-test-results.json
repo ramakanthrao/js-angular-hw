@@ -476,26 +476,6 @@
                 "pendingReason": "",
                 "duration": null,
                 "status": "passed"
-            },
-            {
-                "id": "spec30",
-                "description": "should compute the correct average weight of cats created so far",
-                "fullName": "HW-03: The Cat constructor should compute the correct average weight of cats created so far",
-                "failedExpectations": [
-                    {
-                        "matcherName": "",
-                        "message": "AssertionError: 21.666666666666668 == 25",
-                        "stack": "error properties: Object({ generatedMessage: true, code: 'ERR_ASSERTION', actual: 21.666666666666668, expected: 25, operator: '==' })\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:20:12)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
-                        "passed": false,
-                        "expected": "",
-                        "actual": ""
-                    }
-                ],
-                "passedExpectations": [],
-                "deprecationWarnings": [],
-                "pendingReason": "",
-                "duration": null,
-                "status": "failed"
             }
         ]
     },
@@ -509,7 +489,7 @@
         "status": "passed",
         "specs": [
             {
-                "id": "spec31",
+                "id": "spec30",
                 "description": "instances should not have an averageWeight method",
                 "fullName": "HW-03: The cat instances instances should not have an averageWeight method",
                 "failedExpectations": [],
@@ -520,7 +500,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec32",
+                "id": "spec31",
                 "description": "instances should have the correct constructor property set",
                 "fullName": "HW-03: The cat instances instances should have the correct constructor property set",
                 "failedExpectations": [],
@@ -531,7 +511,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec33",
+                "id": "spec32",
                 "description": "weight property should be settable in the usual way, e.g. felix.weight=",
                 "fullName": "HW-03: The cat instances weight property should be settable in the usual way, e.g. felix.weight=",
                 "failedExpectations": [],
@@ -542,27 +522,18 @@
                 "status": "passed"
             },
             {
-                "id": "spec34",
+                "id": "spec33",
                 "description": "Cat.averageWeight() should still be correct after updating instances",
                 "fullName": "HW-03: The cat instances Cat.averageWeight() should still be correct after updating instances",
-                "failedExpectations": [
-                    {
-                        "matcherName": "",
-                        "message": "AssertionError: 22 == 23",
-                        "stack": "error properties: Object({ generatedMessage: true, code: 'ERR_ASSERTION', actual: 22, expected: 23, operator: '==' })\n    at <Jasmine>\n    at UserContext.<anonymous> (D:\\akbar\\fsninja\\js-angular-hw\\task\\HW-03\\test\\object-with-functions.test.js:54:12)\n    at <Jasmine>\n    at processImmediate (internal/timers.js:439:21)",
-                        "passed": false,
-                        "expected": "",
-                        "actual": ""
-                    }
-                ],
+                "failedExpectations": [],
                 "passedExpectations": [],
                 "deprecationWarnings": [],
                 "pendingReason": "",
                 "duration": null,
-                "status": "failed"
+                "status": "passed"
             },
             {
-                "id": "spec35",
+                "id": "spec34",
                 "description": "Uses Object.defineProperty to get and set instance weight",
                 "fullName": "HW-03: The cat instances Uses Object.defineProperty to get and set instance weight",
                 "failedExpectations": [],
@@ -591,7 +562,7 @@
         "status": "passed",
         "specs": [
             {
-                "id": "spec36",
+                "id": "spec35",
                 "description": "should square() correctly",
                 "fullName": "HW-03:  prototype inheritence static tests should square() correctly",
                 "failedExpectations": [],
@@ -602,7 +573,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec37",
+                "id": "spec36",
                 "description": "should cube() correctly",
                 "fullName": "HW-03:  prototype inheritence static tests should cube() correctly",
                 "failedExpectations": [],
@@ -613,7 +584,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec38",
+                "id": "spec37",
                 "description": "should sum() and average() correctly",
                 "fullName": "HW-03:  prototype inheritence static tests should sum() and average() correctly",
                 "failedExpectations": [],
@@ -631,7 +602,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec39",
+                "id": "spec38",
                 "description": "should even() and odd() correctly",
                 "fullName": "HW-03:  prototype inheritence static tests should even() and odd() correctly",
                 "failedExpectations": [],
@@ -653,7 +624,7 @@
         "status": "passed",
         "specs": [
             {
-                "id": "spec40",
+                "id": "spec39",
                 "description": "should even() and odd() correctly",
                 "fullName": "HW-03:  prototype inheritence random tests should even() and odd() correctly",
                 "failedExpectations": [],
@@ -664,7 +635,7 @@
                 "status": "passed"
             },
             {
-                "id": "spec41",
+                "id": "spec40",
                 "description": "should work all together :)",
                 "fullName": "HW-03:  prototype inheritence random tests should work all together :)",
                 "failedExpectations": [],

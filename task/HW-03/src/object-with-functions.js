@@ -33,12 +33,27 @@ var Cat = (function () {
 
 	var Cat = function (name, weight) {
 		if (!name || !weight) {
-			throw  "Must provide a name and a weight!";
+			throw "Must provide a name and a weight!";
 		}
 		//	this.name = name;
 		//	this.weight = weight;
-		Object.defineProperty(this, 'name', { set: function (ins) { name = ins; }, get: function () { return name; } });
-		Object.defineProperty(this, 'weight', { set: function (wgt) { weight = wgt; }, get: function () { return weight; } });
+		Object.defineProperty(this, 'name', {
+			set: function (ins) {
+				name = ins;
+			},
+			get: function () {
+				return name;
+			}
+		});
+		Object.defineProperty(this, 'weight', {
+			set: function (wgt) {
+				globalWeight = globalWeight - weight + wgt;
+				weight = wgt;
+			},
+			get: function () {
+				return weight;
+			}
+		});
 		globalCount += 1;
 		globalWeight += weight;
 	}
