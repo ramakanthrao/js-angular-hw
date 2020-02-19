@@ -22,12 +22,25 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "brfs": "^2.0.2",
+    "browserify": "^16.5.0",
+    "browserify-shim": "^3.8.14",
     "jasmine": "^3.5.0",
-    "jasmine-json-test-reporter": "^1.0.0-beta"
+    "jasmine-core": "^3.5.0",
+    "jasmine-json-test-reporter": "^1.0.0-beta",
+    "karma": "^4.4.1",
+    "karma-browserify": "^7.0.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^3.1.1",
+    "karma-structured-json-reporter": "^1.0.1",
+    "requirejs": "^2.3.6",
+    "watchify": "^3.11.1"
   },
   "dependencies": {
+    "assert": "^2.0.0",
     "json-beautify": "^1.1.1",
     "request": "^2.88.0",
+    "requirejs": "^2.3.6",
     "stomp-client": "^0.9.0"
   }
 }
