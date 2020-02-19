@@ -63,8 +63,12 @@ describe('HW-02: random calculations', function() {
 });
 
 describe('HW-02: Chain of function calls', function() {
-	var a = add(1)(2);
-	var b = add(3)(4);
+		try{
+			var a = add(1)(2);
+			var b = add(3)(4);
+		}catch(e){
+			console.error(e);
+		}
 	
 	it('should return the number passed in on a single call', function() {
 	  assert.equal(add(1), 1);

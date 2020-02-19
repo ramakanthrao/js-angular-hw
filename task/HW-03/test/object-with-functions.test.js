@@ -27,9 +27,11 @@ describe("HW-03: The Cat constructor", function() {
 });
 
 describe("HW-03: The cat instances", function () {
-	
-	var felix = new Cat('felix', 15);
-
+	try{
+		var felix = new Cat('felix', 15);
+	}catch(e){
+		console.log(e);
+	}
   it("instances should not have an averageWeight method", function () {
     assert.equal((function () {
       var tom = new Cat('tom', 30); 
