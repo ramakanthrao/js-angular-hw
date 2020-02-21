@@ -23,11 +23,11 @@
  *
  */
 function drawRectangle(width, height) {
-     horiLine='─'.repeat(width-2);
-      spaceLine=' '.repeat(width-2);
-     bottom=`└${horiLine}┘\n`;
-      top=`┌${horiLine}┐\n`;
-    middle=`│${spaceLine}│\n`.repeat(height-2);
+    let horiLine='─'.repeat(width-2);
+    let  spaceLine=' '.repeat(width-2);
+   let bottom=`└${horiLine}┘\n`;
+   let   top=`┌${horiLine}┐\n`;
+   let middle=`│${spaceLine}│\n`.repeat(height-2);
     return top+middle+bottom;
 }
 

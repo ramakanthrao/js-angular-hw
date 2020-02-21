@@ -27,8 +27,41 @@
  *
 */
 
-function Cat(){
-	throw new Error('Not implemented');
-};
+var Cat = (function () {
+	var globalWeight = 0;
+	var globalCount = 0;
+
+	var Cat = function (name, weight) {
+		if (!name || !weight) {
+			throw "Must provide a name and a weight!";
+		}
+		Object.defineProperty(this, 'name', {
+			set: function (ins) {
+				name = ins;
+			},
+			get: function () {
+				return name;
+			}
+		});
+		Object.defineProperty(this, 'weight', {
+			set: function (wgt) {
+				globalWeight = globalWeight - weight + wgt;
+				weight = wgt;
+			},
+			get: function () {
+				return weight;
+			}
+		});
+		globalCount += 1;
+		globalWeight += weight;
+	}
+
+	Cat.averageWeight = function () {
+		return globalWeight / globalCount;
+	};
+	return Cat;
+}());
+
+
 
 module.exports = Cat;
