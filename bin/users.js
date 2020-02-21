@@ -1,17 +1,21 @@
 'use strict';
-const users = [  "Venkatarao_Gude",
-                  "Akbar_Mohmad",
-                  "Vedadri_Kakarla",
-                  "Nishant_Ranjan",
-                  "Jitendra_Pandey",
-                  "Ismail_Shaik",
-                  "Karnakar_Gadegoni",
-                  "Suneetha_Pusuluri",
-                  "Sarath_Vankadaru",
-                  "Devendar_Reddy_Gadiam",
-                  "Naveen_Baddhipadige",
-                  "Sridhar_Yamsani",
-                  "Anjaneyelu_Neerati",
-                  "Rakesh_Budugu"
-                ];
+const users = [
+				  "Jitendra_Pandey",
+				  "Karnakar_Gadegoni",
+				  "Naveen_Baddhipadige",
+				  "Sridhar_Yamsani",
+				  "Ismail_Shaik",
+				  "Anjaneyelu_Neerati",
+				  "Sarath_Vankadaru",
+				  "Devendar_Reddy_Gadiam",
+				  "Venkatarao_Gude",
+				  "Vedadri_Kakarla",
+				  "Akbar_Mohmad",
+				  "Nishant_Ranjan",
+				  "Rakesh_Budugu",
+				  "Saurabh_Mishra",
+				  "Suneetha_Pusuluri",
+				  "Chandan_Singh",
+				  "Kranti_Potluri"
+			];
 module.exports = users;              
