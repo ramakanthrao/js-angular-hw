@@ -18,7 +18,7 @@ export class Card {
                       <div id="value-1" class="h5 mb-0 font-weight-bold text-gray-800">${this.value}</div>
                     </div>
                     <div class="col-auto">
-                      <i id="icon-1" class="fas ${this.icon} fa-2x text-gray-300"></i>
+                      <i id="icon-1" class="fa ${this.icon} fa-2x text-gray-300"></i>
                     </div>
                   </div>
                 </div>
