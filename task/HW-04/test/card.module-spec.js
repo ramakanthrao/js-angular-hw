@@ -1,3 +1,5 @@
+import {Card} from '../src/Card.module.js'
+
 describe("HW-04: Card class should render",function(){
   it("Card name should appear ",function(){
 

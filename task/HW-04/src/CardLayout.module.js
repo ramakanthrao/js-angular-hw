@@ -1,4 +1,4 @@
-import {Card} from './Card.js'
+import {Card} from './Card.module.js'
 export class CardLayout {
 	constructor(data){
       let crds = [];
@@ -6,6 +6,7 @@ export class CardLayout {
 			crds.push(new Card(item.name,item.value,item.icon,item.border));
 		});
       this.cards = crds
+
 	}
 	
 	template(){

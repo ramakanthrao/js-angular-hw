@@ -1,10 +1,10 @@
-import { CardLayout } from "./CardLayout.js";
-import { Footer } from "./Footer.js";
-import { ContentHeader } from "./ContetntHeader.js";
-import { Dashboard } from "./Dashboard.js";
-import { TableHeader } from "./TableHeader.js";
-import { Table } from "./Table.js";
-import { TableLayout } from "./TableLayout.js";
+import { CardLayout } from "./CardLayout.module.js";
+import { Footer } from "./Footer.module.js";
+import { ContentHeader } from "./ContetntHeader.module.js";
+import { Dashboard } from "./Dashboard.module.js";
+import { TableHeader } from "./TableHeader.module.js";
+import { Table } from "./Table.module.js";
+import { TableLayout } from "./TableLayout.module.js";
 export const var1 = 111;
 
 window.loadDashBoard = function() {

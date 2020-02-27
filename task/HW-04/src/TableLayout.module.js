@@ -1,4 +1,4 @@
-import { TableRow } from "./TableRow.js";
+import { TableRow } from "./TableRow.module.js";
 export class TableLayout {
   constructor(data) {
     this.totallRows = data.map(item => new TableRow(...item));
