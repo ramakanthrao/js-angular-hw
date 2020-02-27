@@ -1,30 +1,63 @@
-export class Card {
-  constructor(name,value,icon,border){
-    this.name = name,
-    this.value = value,
-    this.icon = icon,
-    this.border = border;
+export class Dashboard {
+  constructor(cardLayout, footerLayout, contentHeader,tableLayout) {
+    this.cardLayout = cardLayout;
+    this.contentHeader = contentHeader;
+     this.tableLayout = tableLayout;
+    this.footerLayout = footerLayout;
   }
-  
+  template() {
+    return `  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
 
-	template(){
-      return `<!-- Card Template -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card ${this.border} shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div id="name-1" class="text-xs font-weight-bold text-primary text-uppercase mb-1">${this.name}</div>
-                      <div id="value-1" class="h5 mb-0 font-weight-bold text-gray-800">${this.value}</div>
-                    </div>
-                    <div class="col-auto">
-                      <i id="icon-1" class="fas ${this.icon} fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-			<!-- Endof Card Template -->`;
-    }
-};
+      <!-- Main Content -->
+      <div id="content">
+		<!-- Page Header here -->
+		<div w3-include-html="PageHeaderTemplate.html"></div>
+		<!-- End of Page Header -->
 
+        <!-- Begin Page Content container-fluid container-->
+        <div class="container-fluid">
+
+		<!-- Content Header here -->
+		<div w3-include-html="ContetntHeaderTemplate.html">${this.contentHeader}</div>
+		<!-- End of Content Header -->
+
+          <!-- Card Layout here -->
+		  <div w3-include-html="CardLayoutTemplate.html">${this.cardLayout}</div>
+		  <!-- End of Card Layout -->
+		  
+		  <!-- Table Layout here -->
+		  <div w3-include-html="TableLayoutTemplate.html">${this.tableLayout}</div>
+		  <!-- End of Table Layout -->
+		  
+		  <!-- Chart Layout here -->
+		  <div w3-include-html="ChartLayoutTemplate.html"></div>
+		  <!-- End of Chart Layout -->		  
+       
+		</div>
+        <!-- End of  /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer here -->
+	  <div w3-include-html="FooterTemplate.html">${this.footerLayout}</div>
+	  <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->`;
+  }
+}
+// template
+// name
+// cardLayout
+// tableLayout
+// chartLayout
+// footerLayout
+// template()
+// data
