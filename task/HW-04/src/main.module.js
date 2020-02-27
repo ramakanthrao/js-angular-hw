@@ -17,7 +17,7 @@ window.loadDashBoard = function() {
   document.body.innerHTML = templateString;
 };
 
-window.loadTable = function() {
+let loadTable = function() {
   let layOutData = [
     "Mentee Name",
     "Total Suits",
@@ -40,7 +40,7 @@ window.loadTable = function() {
   ).template();
   return templateString;
 };
-window.onPageLoad = function() {
+let onPageLoad = function() {
   let layOutData = [
     {
       name: "Total Users",
