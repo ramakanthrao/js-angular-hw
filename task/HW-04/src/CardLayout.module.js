@@ -1,10 +1,8 @@
-class CardLayout {
+import {Card} from './Card.module.js'
+
+export class CardLayout {
 	constructor(data){
-      let crds = [];
-		data.forEach((item, index)=>{
-			crds.push(new Card(Object.values(item)));
-		});
-      this.cards = crds
+		this.cards = data.map((item, index)=> new Card(Object.values(item)));
 	}
 	
 	template(){
