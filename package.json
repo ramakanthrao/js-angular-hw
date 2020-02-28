@@ -35,7 +35,8 @@
     "karma-jasmine": "^3.1.1",
     "karma-requirejs": "^1.1.0",
     "karma-structured-json-reporter": "^1.0.1",
-    "requirejs": "^2.3.6"
+    "requirejs": "^2.3.6",
+    "typescript": "^3.8.2"
   },
   "dependencies": {
     "assert": "^2.0.0",
