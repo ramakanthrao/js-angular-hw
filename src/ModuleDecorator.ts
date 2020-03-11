@@ -30,12 +30,18 @@ export function ComponentDecorator(config: Object) {
 }
 **/
 
+export interface  ModuleConfig {
+     providers?:Function[];
+     components?:Function[];
+     modules?:Function[];
+     boorstrap?:Function[]
+}
 
-
-export function ComponentDecorator(config: Object, b:number,c:string) {
+export function ModuleDecorator (config: ModuleConfig) {
     console.log('-- decorator factory invoked --');
     return function (constructor: Function) {
         console.log('-- decorator invoked --');
+        providers.map((provider)=>window['ng'+provider.name] = provider();
         let keys:string[] = Object.keys(config);
         keys.filter(key => 'template' != key).map(key=>constructor.prototype[key] = config[key]);
         constructor.prototype['template'] = function(){
