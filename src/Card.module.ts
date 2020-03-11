@@ -1,5 +1,5 @@
 
-import {ComponentDecorator} from './ComponentDecorator.js'
+import {ComponentDecorator} from './ComponentDecorator'
 
 @ComponentDecorator({
   htmlTag:'card',
@@ -21,7 +21,7 @@ import {ComponentDecorator} from './ComponentDecorator.js'
         </div>
   <!-- Endof Card Template -->`,
   myStyle:`.some{ border:1px solid;}`
-})
+},2,'sme')
 export class Card {
   private key: string;
   private value: any;
