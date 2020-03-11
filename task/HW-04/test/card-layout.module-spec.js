@@ -21,13 +21,13 @@ describe("HW-04: Card Layout class should render",function(){
   it("Card name should appear ",function(){
 		expect(document.querySelector('.row .card')).toBeDefined();
 		expect(document.querySelectorAll('.row .card').length).toBe(4);
-		expect(document.querySelector('.row .card.border-left-primary .text-xs')).toContainText('Total Users');	
+		expect(document.querySelector('.row .card.border-left-primary .text-xs').textContent).toBe('Total Users');	
 	});
   
   it("Card value should appear",function(){
 		expect(document.querySelector('.row .card')).toBeDefined();
 		expect(document.querySelectorAll('.row .card').length).toBe(4);
-		expect(document.querySelector('.row .card.border-left-primary .h5')).toContainText('22');
+		expect(document.querySelector('.row .card.border-left-primary .h5').textContent).toBe('14');
   });
   
   it("All cards should appear",function(){

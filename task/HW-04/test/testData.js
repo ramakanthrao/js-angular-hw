@@ -10,7 +10,7 @@ export const testData = {
 						"Failed Tests",
 						"Status"
 					],
-					tableRows:[
+					"tableRows":[
 						{
 							"menteeName": "Akbar_Mohmad",
 							"totalSuits": 13,

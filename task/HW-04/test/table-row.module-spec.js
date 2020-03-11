@@ -6,7 +6,7 @@ describe("HW-04: Table Row class should render", function () {
 		try {	
 			var tableRow = new TableRow(testData.table.tableRows[0]);
 			var body = document.getElementsByTagName("body")[0];
-			body.innerHTML = tableRow.template();
+			body.innerHTML = '<table><tbody>'+tableRow.template()+'</tbody></table>';
 		}catch(er){
 			console.log(er);
 		}		

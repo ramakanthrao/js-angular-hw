@@ -1,14 +1,12 @@
 import { Table } from '../src/Table.module.js'
 import {testData} from './testData.js'
 
-
-
 describe("HW-04: Table class should render", function () {
 	
 	beforeAll(function() {
 		try{
 			var body = document.getElementsByTagName("body")[0];
-			Table table = new Table(testData.table);
+			var table = new Table(testData.table);
 			body.innerHTML = table.template();
 		}catch(er){
 			console.log(er);
