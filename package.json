@@ -6,8 +6,9 @@
   "scripts": {
     "build": "babel src -d build",
     "start": "node bin/index.js || node bin/publish.js",
-    "karmaTest": "karma start --log-level debug --single-run",
-    "test": "node bin/index.js",
+    "testV2": "karma start --log-level debug --single-run || node bin/publishV2.js",
+	"publishV2": "node bin/publishV2.js",
+    "test": "karma start --log-level debug --single-run",
     "tsc": "tsc",
     "restart": "node bin/publish.js"
   },
