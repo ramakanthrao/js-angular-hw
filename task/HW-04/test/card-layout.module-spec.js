@@ -1,23 +1,37 @@
 import {CardLayout} from '../src/CardLayout.module.js'
-
+import {testData} from './testData.js'
 describe("HW-04: Card Layout class should render",function(){
+
+	beforeAll(function() {
+		try {
+			var body = document.getElementsByTagName("body")[0];
+			var cardLayout = new CardLayout(testData.cards);
+			body.innerHTML = cardLayout.template();
+		}catch(er){
+			console.log(er);
+		}		
+    });
+	
+  it("Card Layout should appear ",function(){
+	expect(document.querySelector('.row .card')).toBeDefined();
+	expect(document.querySelectorAll('.row .card').length).toBe(4);
+
+	});
+	
   it("Card name should appear ",function(){
-
-	document.body.onload = function() {
-
-		var data = 		[{name:'Total Users', value:22, className:'fa-users', info:'border-left-primary'},
-		{name:'Total HomeWorks', value:4, className:'fa-home', info:'border-left-success'}];
-		var cardLayout = new CardLayout(data);
-		document.body.innerHTML = cardLayout.template();
-		expect(document.querySelector('#name-1')).toContainText('Total Users');
-		//done();
-	}; });
+		expect(document.querySelector('.row .card')).toBeDefined();
+		expect(document.querySelectorAll('.row .card').length).toBe(4);
+		expect(document.querySelector('.row .card.border-left-primary .text-xs').textContent).toBe('Total Users');	
+	});
   
   it("Card value should appear",function(){
-	document.body.onload = function() {
-		var card = new Card('Total Users', 22, 'fa-users', 'border-left-success');
-		document.body.innerHTML = card.template();
-		expect(document.querySelector('#value-1')).toContainText('22');
-	}
+		expect(document.querySelector('.row .card')).toBeDefined();
+		expect(document.querySelectorAll('.row .card').length).toBe(4);
+		expect(document.querySelector('.row .card.border-left-primary .h5').textContent).toBe('14');
+  });
+  
+  it("All cards should appear",function(){
+		expect(document.querySelector('.row .card')).toBeDefined();
+		expect(document.querySelectorAll('.row .card').length).toBe(4);
   });
 });

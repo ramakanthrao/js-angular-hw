@@ -1,12 +1,6 @@
 import {Card} from './Card.module.js'
 export class CardLayout {
 	constructor(data){
-      let crds = [];
-		data.forEach((item, index)=>{
-			crds.push(new Card(item.name,item.value,item.icon,item.border));
-		});
-      this.cards = crds
-
 	}
 	
 	template(){
