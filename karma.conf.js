@@ -22,7 +22,8 @@ module.exports = function(config) {
 		'task/**/test/*.spec.js',
 		'task/**/test/*.test.js',
 		{ pattern: 'task/**/src/*.module.js', type: 'module' },
-		{ pattern: 'task/**/test/*.module-spec.js', type: 'module' }
+		{ pattern: 'task/**/test/*.module-spec.js', type: 'module' },
+		{ pattern: 'task/HW-04/test/testData.js', type: 'module' }
     ],
 
 
@@ -73,7 +74,7 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true,
+    singleRun: false,
 
     // Concurrency level
     // how many browser should be started simultaneous

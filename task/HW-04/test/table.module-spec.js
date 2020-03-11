@@ -1,35 +1,27 @@
-import { TableLayout } from '../src/TableLayout.module.js'
-import { TableHeader } from '../src/TableHeader.module.js'
-import { TableRow } from '../src/TableRow.module.js'
 import { Table } from '../src/Table.module.js'
+import {testData} from './testData.js'
 
 
 
 describe("HW-04: Table class should render", function () {
+	
+	beforeAll(function() {
+		try{
+			var body = document.getElementsByTagName("body")[0];
+			Table table = new Table(testData.table);
+			body.innerHTML = table.template();
+		}catch(er){
+			console.log(er);
+		}
+    });
+	
     it("Table Header should appear ", function () {
-        document.body.onload = function () {
             // table layout template
-            var tablelayout = new TableLayout();
-            // table header template
-            var data = ['Mentee Name', 'Total Suits', 'Total Tests', 'Passed Tests', 'Failed Tests', 'Status'];
-            var tableHeader = new TableHeader(...data);
-            tableHeader.template().trim()
-
-            // table rows
-            var data = ['Ramakanth', 9, 13, 1, 12, 'RED'];
-            var data = ['Apurv Vaidya', 16, 43, 3, 32, 'YELLOW'];
-            var data = ['Anjaneyelu Neerati', 17, 48, 46, 2, 'GREEN'];
-            var tableRow1 = new TableRow(...data);
-            var tableRow2 = new TableRow(...data);
-            var tableRow3 = new TableRow(...data);
-            var rowData = [tableRow1, tableRow2, tableRow3];
-            var tableRows = rowData.map((item, i) => item.template().trim()).join('')
-            document.body.innerHTML = `<!-- Table Template -->
-            ${tablelayout.template().trim()}  
-            ${tableHeader.template().trim()}
-            ${tableRows.template().trim()}
-            <!-- Endof Table  Template -->`;
-            expect(document.querySelector('.tb-header')).toBeDefined();
-        }
-    })
+			expect(document.querySelector('.card-header.py-3 .m-0.font-weight-bold.text-primary').textContent).toBe('Report');
+            expect(document.querySelector('.table')).toBeDefined();
+			expect(document.querySelector('.table tr th')).toBeDefined();
+			expect(document.querySelector('.table tr td')).toBeDefined();
+			expect(document.querySelectorAll('.table tr th').length).toBe(6);
+			expect(document.querySelectorAll('.table tr td').length).toBe(18);
+    });
 })
