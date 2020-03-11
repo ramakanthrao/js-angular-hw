@@ -1,6 +1,7 @@
 import {Card} from './Card.module.js'
 export class CardLayout {
 	constructor(data){
+		this.cards = data.map((item, index)=> new Card(item));
 	}
 	
 	template(){

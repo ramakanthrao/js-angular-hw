@@ -1,14 +1,15 @@
 export class TableRow {
-  constructor(statusClass, data) {
-    this.data = data;
-    console.log(statusClass);
+  constructor(data) {
+    this.statusClass = data.statusClass;
+	delete data.statusClass;
+	this.data = data;
+    console.log(data.statusClass);
 
     this.templateString = `<!-- Table Row template-->
                             <tr>
-                             ${this.data
-                               .map((item, index) => {
+                             ${Object.values(this.data).map((item, index) => {
                                  return index === 5
-                                   ? `<td class=${statusClass}>${item}</td>`
+                                   ? `<td class=${this.statusClass}>${item}</td>`
                                    : `<td>${item}</td>`;
                                })
                                .join("\n")}                   

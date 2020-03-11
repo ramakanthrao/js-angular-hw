@@ -1,10 +1,12 @@
+import { TableHeader } from './TableHeader.module.js'
+import { TableRow } from '../src/TableRow.module.js'
 export class Table{
 
-  constructor(name,tableHeader,tableRows){
-  this.name=name;
+  constructor(data){
+  this.name=data.name;
   //this.data=data;
-  this.tableHeader=tableHeader;
-   this.tableRows=tableRows;
+  this.tableHeader=new TableHeader(data.tableHeaders).template();
+   this.tableRows= data.tableRows.map((row,index) =>new TableRow(row).template()).join("\n");
   // this.tableOptions=tableOptions;
 }
 template(){
@@ -17,7 +19,9 @@ template(){
     <div class="card-body">
       <div class="table-responsive">
          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+		 <thead>
         ${this.tableHeader}
+		</thead>
           <tbody>
           ${this.tableRows}
           </tbody>
