@@ -6,8 +6,10 @@
   "scripts": {
     "build": "babel src -d build",
     "start": "node bin/index.js || node bin/publish.js",
-    "karmaTest": "karma start --log-level debug --single-run",
-    "test": "node bin/index.js",
+    "testV2": "karma start --single-run || node bin/publishV2.js",
+    "publishV2": "node bin/publishV2.js",
+    "test": "karma start --log-level debug",
+    "tsc": "tsc",
     "restart": "node bin/publish.js"
   },
   "repository": {
@@ -35,7 +37,9 @@
     "karma-jasmine": "^3.1.1",
     "karma-requirejs": "^1.1.0",
     "karma-structured-json-reporter": "^1.0.1",
-    "requirejs": "^2.3.6"
+    "requirejs": "^2.3.6",
+    "typescript": "^3.8.2",
+    "watchify": "^3.11.1"
   },
   "dependencies": {
     "assert": "^2.0.0",

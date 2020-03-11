@@ -19,13 +19,17 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-	  'task/**/test/*.spec.js',
-	  'task/**/test/*.test.js'
+		'task/**/test/*.spec.js',
+		'task/**/test/*.test.js',
+		{ pattern: 'task/**/src/*.module.js', type: 'module' },
+		{ pattern: 'task/**/test/*.module-spec.js', type: 'module' },
+		{ pattern: 'task/HW-04/test/testData.js', type: 'module' }
     ],
 
 
     // list of files / patterns to exclude
     exclude: [
+
     ],
 
 

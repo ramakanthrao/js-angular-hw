@@ -12,8 +12,6 @@ const users = [
 				  "Vedadri_Kakarla",
 				  "Akbar_Mohmad",
 				  "Nishant_Ranjan",
-				  "Rakesh_Budugu",
-				  "Saurabh_Mishra",
 				  "Suneetha_Pusuluri",
 				  "Chandan_Singh",
 				  "Kranti_Potluri"

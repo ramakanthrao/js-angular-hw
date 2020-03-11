@@ -1,9 +1,9 @@
 export class Card {
-  constructor(name,value,icon,border){
-    this.name = name,
-    this.value = value,
-    this.icon = icon,
-    this.border = border;
+  constructor(data){
+    this.name = data.name,
+    this.value = data.value,
+    this.icon = data.icon,
+    this.border = data.border;
   }
   
 
